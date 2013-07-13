@@ -1,0 +1,1696 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ZulWebModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ZulWebModelStoreContainer">
+    <EntitySet Name="ATT_DD_Shifts" EntityType="ZulWebModel.Store.ATT_DD_Shifts" store:Type="Tables" store:Schema="dbo" store:Name="ATT_DD_Shifts">
+      <DefiningQuery>SELECT 
+      [ATT_DD_Shifts].[ShiftId] AS [ShiftId], 
+      [ATT_DD_Shifts].[ShiftDescription] AS [ShiftDescription], 
+      [ATT_DD_Shifts].[ShiftEntryStartTime] AS [ShiftEntryStartTime], 
+      [ATT_DD_Shifts].[ShiftStartTime] AS [ShiftStartTime], 
+      [ATT_DD_Shifts].[ShiftEndTime] AS [ShiftEndTime], 
+      [ATT_DD_Shifts].[ShiftGracePeriod] AS [ShiftGracePeriod], 
+      [ATT_DD_Shifts].[ShiftProlong] AS [ShiftProlong], 
+      [ATT_DD_Shifts].[ShiftStatus] AS [ShiftStatus], 
+      [ATT_DD_Shifts].[LastUserID] AS [LastUserID], 
+      [ATT_DD_Shifts].[LastEditDateTime] AS [LastEditDateTime], 
+      [ATT_DD_Shifts].[Modifications] AS [Modifications], 
+      [ATT_DD_Shifts].[LastIP] AS [LastIP]
+      FROM [dbo].[ATT_DD_Shifts] AS [ATT_DD_Shifts]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ATT_MA_EmployeeDutyRoaster_Detail" EntityType="ZulWebModel.Store.ATT_MA_EmployeeDutyRoaster_Detail" store:Type="Tables" store:Schema="dbo" store:Name="ATT_MA_EmployeeDutyRoaster_Detail">
+      <DefiningQuery>SELECT 
+      [ATT_MA_EmployeeDutyRoaster_Detail].[RoasterID] AS [RoasterID], 
+      [ATT_MA_EmployeeDutyRoaster_Detail].[WeekNo] AS [WeekNo], 
+      [ATT_MA_EmployeeDutyRoaster_Detail].[Mon_Shift] AS [Mon_Shift], 
+      [ATT_MA_EmployeeDutyRoaster_Detail].[Tue_Shift] AS [Tue_Shift], 
+      [ATT_MA_EmployeeDutyRoaster_Detail].[Wed_Shift] AS [Wed_Shift], 
+      [ATT_MA_EmployeeDutyRoaster_Detail].[Thu_Shift] AS [Thu_Shift], 
+      [ATT_MA_EmployeeDutyRoaster_Detail].[Fri_Shift] AS [Fri_Shift], 
+      [ATT_MA_EmployeeDutyRoaster_Detail].[Sat_Shift] AS [Sat_Shift], 
+      [ATT_MA_EmployeeDutyRoaster_Detail].[Sun_Shift] AS [Sun_Shift]
+      FROM [dbo].[ATT_MA_EmployeeDutyRoaster_Detail] AS [ATT_MA_EmployeeDutyRoaster_Detail]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ATT_MA_EmployeeDutyRoaster_Main" EntityType="ZulWebModel.Store.ATT_MA_EmployeeDutyRoaster_Main" store:Type="Tables" store:Schema="dbo" store:Name="ATT_MA_EmployeeDutyRoaster_Main">
+      <DefiningQuery>SELECT 
+      [ATT_MA_EmployeeDutyRoaster_Main].[RoasterID] AS [RoasterID], 
+      [ATT_MA_EmployeeDutyRoaster_Main].[EmpID] AS [EmpID], 
+      [ATT_MA_EmployeeDutyRoaster_Main].[EmpRoasterStatus] AS [EmpRoasterStatus], 
+      [ATT_MA_EmployeeDutyRoaster_Main].[EmpRoasterApplyDate] AS [EmpRoasterApplyDate], 
+      [ATT_MA_EmployeeDutyRoaster_Main].[LastUserID] AS [LastUserID], 
+      [ATT_MA_EmployeeDutyRoaster_Main].[LastEditDateTime] AS [LastEditDateTime], 
+      [ATT_MA_EmployeeDutyRoaster_Main].[Modifications] AS [Modifications], 
+      [ATT_MA_EmployeeDutyRoaster_Main].[LastIP] AS [LastIP]
+      FROM [dbo].[ATT_MA_EmployeeDutyRoaster_Main] AS [ATT_MA_EmployeeDutyRoaster_Main]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ATT_MA_Employees" EntityType="ZulWebModel.Store.ATT_MA_Employees" store:Type="Tables" store:Schema="dbo" store:Name="ATT_MA_Employees">
+      <DefiningQuery>SELECT 
+      [ATT_MA_Employees].[EmpID] AS [EmpID], 
+      [ATT_MA_Employees].[EmpFirstName] AS [EmpFirstName], 
+      [ATT_MA_Employees].[EmpMiddleName] AS [EmpMiddleName], 
+      [ATT_MA_Employees].[EmpLastName] AS [EmpLastName], 
+      [ATT_MA_Employees].[EmpFatherName] AS [EmpFatherName], 
+      [ATT_MA_Employees].[EmpGender] AS [EmpGender], 
+      [ATT_MA_Employees].[EmpSalutation] AS [EmpSalutation], 
+      [ATT_MA_Employees].[EmpDOB] AS [EmpDOB], 
+      [ATT_MA_Employees].[EmpAddress] AS [EmpAddress], 
+      [ATT_MA_Employees].[CountryCityID] AS [CountryCityID], 
+      [ATT_MA_Employees].[EmpJoinDate] AS [EmpJoinDate], 
+      [ATT_MA_Employees].[EmpPhone] AS [EmpPhone], 
+      [ATT_MA_Employees].[EmpMobile] AS [EmpMobile], 
+      [ATT_MA_Employees].[EmpEmail] AS [EmpEmail], 
+      [ATT_MA_Employees].[ReligionID] AS [ReligionID], 
+      [ATT_MA_Employees].[EmpMaritalStatus] AS [EmpMaritalStatus], 
+      [ATT_MA_Employees].[EmpCNIC] AS [EmpCNIC], 
+      [ATT_MA_Employees].[BranchID] AS [BranchID], 
+      [ATT_MA_Employees].[DeptID] AS [DeptID], 
+      [ATT_MA_Employees].[DesigID] AS [DesigID], 
+      [ATT_MA_Employees].[EmpConfirmationDate] AS [EmpConfirmationDate], 
+      [ATT_MA_Employees].[EmpLeftDate] AS [EmpLeftDate], 
+      [ATT_MA_Employees].[EmpStatus] AS [EmpStatus], 
+      [ATT_MA_Employees].[LastUserID] AS [LastUserID], 
+      [ATT_MA_Employees].[LastEditDateTime] AS [LastEditDateTime], 
+      [ATT_MA_Employees].[Modifications] AS [Modifications], 
+      [ATT_MA_Employees].[LastIP] AS [LastIP], 
+      [ATT_MA_Employees].[EmpPic] AS [EmpPic], 
+      [ATT_MA_Employees].[LeftReason] AS [LeftReason], 
+      [ATT_MA_Employees].[EmpHPTemplate] AS [EmpHPTemplate], 
+      [ATT_MA_Employees].[Code] AS [Code], 
+      [ATT_MA_Employees].[OTAllowed] AS [OTAllowed], 
+      [ATT_MA_Employees].[LateAllowed] AS [LateAllowed], 
+      [ATT_MA_Employees].[EmpStatusID] AS [EmpStatusID], 
+      [ATT_MA_Employees].[OT_From] AS [OT_From], 
+      [ATT_MA_Employees].[OT_To] AS [OT_To]
+      FROM [dbo].[ATT_MA_Employees] AS [ATT_MA_Employees]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ATT_MA_EmpShifts_Detail" EntityType="ZulWebModel.Store.ATT_MA_EmpShifts_Detail" store:Type="Tables" store:Schema="dbo" store:Name="ATT_MA_EmpShifts_Detail">
+      <DefiningQuery>SELECT 
+      [ATT_MA_EmpShifts_Detail].[EmpShiftID] AS [EmpShiftID], 
+      [ATT_MA_EmpShifts_Detail].[ShiftID] AS [ShiftID]
+      FROM [dbo].[ATT_MA_EmpShifts_Detail] AS [ATT_MA_EmpShifts_Detail]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ATT_MA_EmpShifts_Main" EntityType="ZulWebModel.Store.ATT_MA_EmpShifts_Main" store:Type="Tables" store:Schema="dbo" store:Name="ATT_MA_EmpShifts_Main">
+      <DefiningQuery>SELECT 
+      [ATT_MA_EmpShifts_Main].[EmpShiftID] AS [EmpShiftID], 
+      [ATT_MA_EmpShifts_Main].[EmpID] AS [EmpID], 
+      [ATT_MA_EmpShifts_Main].[EmpShiftStatus] AS [EmpShiftStatus], 
+      [ATT_MA_EmpShifts_Main].[EmpShiftApplyDate] AS [EmpShiftApplyDate], 
+      [ATT_MA_EmpShifts_Main].[LastUserID] AS [LastUserID], 
+      [ATT_MA_EmpShifts_Main].[LastEditDateTime] AS [LastEditDateTime], 
+      [ATT_MA_EmpShifts_Main].[Modifications] AS [Modifications], 
+      [ATT_MA_EmpShifts_Main].[LastIP] AS [LastIP]
+      FROM [dbo].[ATT_MA_EmpShifts_Main] AS [ATT_MA_EmpShifts_Main]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ATT_MA_EmpStatus" EntityType="ZulWebModel.Store.ATT_MA_EmpStatus" store:Type="Tables" store:Schema="dbo" store:Name="ATT_MA_EmpStatus">
+      <DefiningQuery>SELECT 
+      [ATT_MA_EmpStatus].[EmpStatusID] AS [EmpStatusID], 
+      [ATT_MA_EmpStatus].[EmpStatusDesc] AS [EmpStatusDesc], 
+      [ATT_MA_EmpStatus].[EmpStatusFlag] AS [EmpStatusFlag], 
+      [ATT_MA_EmpStatus].[LasrUserID] AS [LasrUserID], 
+      [ATT_MA_EmpStatus].[LastEditDateTime] AS [LastEditDateTime], 
+      [ATT_MA_EmpStatus].[Modifications] AS [Modifications], 
+      [ATT_MA_EmpStatus].[LastIP] AS [LastIP]
+      FROM [dbo].[ATT_MA_EmpStatus] AS [ATT_MA_EmpStatus]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ATT_TR_PunchMissAndDelay" EntityType="ZulWebModel.Store.ATT_TR_PunchMissAndDelay" store:Type="Tables" store:Schema="dbo" store:Name="ATT_TR_PunchMissAndDelay">
+      <DefiningQuery>SELECT 
+      [ATT_TR_PunchMissAndDelay].[PunchID] AS [PunchID], 
+      [ATT_TR_PunchMissAndDelay].[EmpID] AS [EmpID], 
+      [ATT_TR_PunchMissAndDelay].[DateOfMiss] AS [DateOfMiss], 
+      [ATT_TR_PunchMissAndDelay].[Reason] AS [Reason], 
+      [ATT_TR_PunchMissAndDelay].[EntryTime] AS [EntryTime], 
+      [ATT_TR_PunchMissAndDelay].[EntryType] AS [EntryType], 
+      [ATT_TR_PunchMissAndDelay].[ApproveID] AS [ApproveID], 
+      [ATT_TR_PunchMissAndDelay].[ApprovedDate] AS [ApprovedDate], 
+      [ATT_TR_PunchMissAndDelay].[LastUserID] AS [LastUserID], 
+      [ATT_TR_PunchMissAndDelay].[LastEditDateTime] AS [LastEditDateTime], 
+      [ATT_TR_PunchMissAndDelay].[Modifications] AS [Modifications], 
+      [ATT_TR_PunchMissAndDelay].[LastIP] AS [LastIP], 
+      [ATT_TR_PunchMissAndDelay].[DateOfMissOut] AS [DateOfMissOut], 
+      [ATT_TR_PunchMissAndDelay].[EntryTimeOUT] AS [EntryTimeOUT], 
+      [ATT_TR_PunchMissAndDelay].[Posted] AS [Posted]
+      FROM [dbo].[ATT_TR_PunchMissAndDelay] AS [ATT_TR_PunchMissAndDelay]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="EUS_DD_Cities" EntityType="ZulWebModel.Store.EUS_DD_Cities" store:Type="Tables" store:Schema="dbo" store:Name="EUS_DD_Cities">
+      <DefiningQuery>SELECT 
+      [EUS_DD_Cities].[CountryID] AS [CountryID], 
+      [EUS_DD_Cities].[CountryCityID] AS [CountryCityID], 
+      [EUS_DD_Cities].[CityDescription] AS [CityDescription], 
+      [EUS_DD_Cities].[LastUserID] AS [LastUserID], 
+      [EUS_DD_Cities].[LastEditDateTime] AS [LastEditDateTime], 
+      [EUS_DD_Cities].[Modifications] AS [Modifications], 
+      [EUS_DD_Cities].[LastIP] AS [LastIP]
+      FROM [dbo].[EUS_DD_Cities] AS [EUS_DD_Cities]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="EUS_DD_Countries" EntityType="ZulWebModel.Store.EUS_DD_Countries" store:Type="Tables" store:Schema="dbo" store:Name="EUS_DD_Countries">
+      <DefiningQuery>SELECT 
+      [EUS_DD_Countries].[CountryID] AS [CountryID], 
+      [EUS_DD_Countries].[CountryDescription] AS [CountryDescription], 
+      [EUS_DD_Countries].[LastUserID] AS [LastUserID], 
+      [EUS_DD_Countries].[LastEditDateTime] AS [LastEditDateTime], 
+      [EUS_DD_Countries].[Modifications] AS [Modifications], 
+      [EUS_DD_Countries].[LastIP] AS [LastIP]
+      FROM [dbo].[EUS_DD_Countries] AS [EUS_DD_Countries]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="EUS_DD_Departments" EntityType="ZulWebModel.Store.EUS_DD_Departments" store:Type="Tables" store:Schema="dbo" store:Name="EUS_DD_Departments">
+      <DefiningQuery>SELECT 
+      [EUS_DD_Departments].[DeptID] AS [DeptID], 
+      [EUS_DD_Departments].[Department] AS [Department], 
+      [EUS_DD_Departments].[DeptStatus] AS [DeptStatus], 
+      [EUS_DD_Departments].[LastUserID] AS [LastUserID], 
+      [EUS_DD_Departments].[LastEditDateTime] AS [LastEditDateTime], 
+      [EUS_DD_Departments].[Modifications] AS [Modifications], 
+      [EUS_DD_Departments].[LastIP] AS [LastIP], 
+      [EUS_DD_Departments].[DepartmentLevel] AS [DepartmentLevel], 
+      [EUS_DD_Departments].[DepartmentParent] AS [DepartmentParent], 
+      [EUS_DD_Departments].[DepartmentType] AS [DepartmentType], 
+      [EUS_DD_Departments].[DeptCode] AS [DeptCode], 
+      [EUS_DD_Departments].[DeptDesc] AS [DeptDesc]
+      FROM [dbo].[EUS_DD_Departments] AS [EUS_DD_Departments]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="EUS_DD_Designations" EntityType="ZulWebModel.Store.EUS_DD_Designations" store:Type="Tables" store:Schema="dbo" store:Name="EUS_DD_Designations">
+      <DefiningQuery>SELECT 
+      [EUS_DD_Designations].[DesigID] AS [DesigID], 
+      [EUS_DD_Designations].[DesigDescription] AS [DesigDescription], 
+      [EUS_DD_Designations].[DesigStatus] AS [DesigStatus], 
+      [EUS_DD_Designations].[LastUserID] AS [LastUserID], 
+      [EUS_DD_Designations].[LastEditDateTime] AS [LastEditDateTime], 
+      [EUS_DD_Designations].[Modifications] AS [Modifications], 
+      [EUS_DD_Designations].[LastIP] AS [LastIP]
+      FROM [dbo].[EUS_DD_Designations] AS [EUS_DD_Designations]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="EUS_DD_ERPModules" EntityType="ZulWebModel.Store.EUS_DD_ERPModules" store:Type="Tables" store:Schema="dbo" store:Name="EUS_DD_ERPModules">
+      <DefiningQuery>SELECT 
+      [EUS_DD_ERPModules].[ERPModuleID] AS [ERPModuleID], 
+      [EUS_DD_ERPModules].[ModuleName] AS [ModuleName], 
+      [EUS_DD_ERPModules].[ModuleNameShort] AS [ModuleNameShort], 
+      [EUS_DD_ERPModules].[ModuleStatus] AS [ModuleStatus]
+      FROM [dbo].[EUS_DD_ERPModules] AS [EUS_DD_ERPModules]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="EUS_DD_JobTypes" EntityType="ZulWebModel.Store.EUS_DD_JobTypes" store:Type="Tables" store:Schema="dbo" store:Name="EUS_DD_JobTypes">
+      <DefiningQuery>SELECT 
+      [EUS_DD_JobTypes].[JobID] AS [JobID], 
+      [EUS_DD_JobTypes].[JobDescription] AS [JobDescription], 
+      [EUS_DD_JobTypes].[JobStatus] AS [JobStatus], 
+      [EUS_DD_JobTypes].[LastUserID] AS [LastUserID], 
+      [EUS_DD_JobTypes].[LastEditDateTime] AS [LastEditDateTime], 
+      [EUS_DD_JobTypes].[Modifications] AS [Modifications], 
+      [EUS_DD_JobTypes].[LastIP] AS [LastIP]
+      FROM [dbo].[EUS_DD_JobTypes] AS [EUS_DD_JobTypes]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="EUS_DD_Privileges" EntityType="ZulWebModel.Store.EUS_DD_Privileges" store:Type="Tables" store:Schema="dbo" store:Name="EUS_DD_Privileges">
+      <DefiningQuery>SELECT 
+      [EUS_DD_Privileges].[PrivilegeID] AS [PrivilegeID], 
+      [EUS_DD_Privileges].[PrivilegeName] AS [PrivilegeName]
+      FROM [dbo].[EUS_DD_Privileges] AS [EUS_DD_Privileges]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="EUS_DD_Religion" EntityType="ZulWebModel.Store.EUS_DD_Religion" store:Type="Tables" store:Schema="dbo" store:Name="EUS_DD_Religion">
+      <DefiningQuery>SELECT 
+      [EUS_DD_Religion].[ReligionID] AS [ReligionID], 
+      [EUS_DD_Religion].[ReligionDesc] AS [ReligionDesc], 
+      [EUS_DD_Religion].[ReligionStatus] AS [ReligionStatus], 
+      [EUS_DD_Religion].[LastUserID] AS [LastUserID], 
+      [EUS_DD_Religion].[LastEditDateTime] AS [LastEditDateTime], 
+      [EUS_DD_Religion].[Modifications] AS [Modifications], 
+      [EUS_DD_Religion].[LastIP] AS [LastIP]
+      FROM [dbo].[EUS_DD_Religion] AS [EUS_DD_Religion]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="EUS_DD_UserTypes" EntityType="ZulWebModel.Store.EUS_DD_UserTypes" store:Type="Tables" store:Schema="dbo" store:Name="EUS_DD_UserTypes">
+      <DefiningQuery>SELECT 
+      [EUS_DD_UserTypes].[UserTypeID] AS [UserTypeID], 
+      [EUS_DD_UserTypes].[UserTypeName] AS [UserTypeName]
+      FROM [dbo].[EUS_DD_UserTypes] AS [EUS_DD_UserTypes]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="EUS_MA_BP_Privilege" EntityType="ZulWebModel.Store.EUS_MA_BP_Privilege" store:Type="Tables" store:Schema="dbo" store:Name="EUS_MA_BP_Privilege">
+      <DefiningQuery>SELECT 
+      [EUS_MA_BP_Privilege].[BusinessProcessID] AS [BusinessProcessID], 
+      [EUS_MA_BP_Privilege].[PrivilegeID] AS [PrivilegeID]
+      FROM [dbo].[EUS_MA_BP_Privilege] AS [EUS_MA_BP_Privilege]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="EUS_MA_Branches" EntityType="ZulWebModel.Store.EUS_MA_Branches" store:Type="Tables" store:Schema="dbo" store:Name="EUS_MA_Branches">
+      <DefiningQuery>SELECT 
+      [EUS_MA_Branches].[CompanyID] AS [CompanyID], 
+      [EUS_MA_Branches].[BranchID] AS [BranchID], 
+      [EUS_MA_Branches].[BranchName] AS [BranchName], 
+      [EUS_MA_Branches].[BranchAddress] AS [BranchAddress], 
+      [EUS_MA_Branches].[BranchContactPerson] AS [BranchContactPerson], 
+      [EUS_MA_Branches].[CountryCityID] AS [CountryCityID], 
+      [EUS_MA_Branches].[BranchPhone] AS [BranchPhone], 
+      [EUS_MA_Branches].[BranchFax] AS [BranchFax], 
+      [EUS_MA_Branches].[BranchEmail] AS [BranchEmail], 
+      [EUS_MA_Branches].[BranchURL] AS [BranchURL], 
+      [EUS_MA_Branches].[BranchStatus] AS [BranchStatus], 
+      [EUS_MA_Branches].[LastUserID] AS [LastUserID], 
+      [EUS_MA_Branches].[LastEditDateTime] AS [LastEditDateTime], 
+      [EUS_MA_Branches].[Modifications] AS [Modifications], 
+      [EUS_MA_Branches].[LastIP] AS [LastIP]
+      FROM [dbo].[EUS_MA_Branches] AS [EUS_MA_Branches]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="EUS_MA_BusinessProcesses" EntityType="ZulWebModel.Store.EUS_MA_BusinessProcesses" store:Type="Tables" store:Schema="dbo" store:Name="EUS_MA_BusinessProcesses">
+      <DefiningQuery>SELECT 
+      [EUS_MA_BusinessProcesses].[BusinessProcessID] AS [BusinessProcessID], 
+      [EUS_MA_BusinessProcesses].[ERPModuleID] AS [ERPModuleID], 
+      [EUS_MA_BusinessProcesses].[BusinessProcessName] AS [BusinessProcessName], 
+      [EUS_MA_BusinessProcesses].[BusinessProcessNameShort] AS [BusinessProcessNameShort], 
+      [EUS_MA_BusinessProcesses].[BusinessProcessLevel] AS [BusinessProcessLevel], 
+      [EUS_MA_BusinessProcesses].[BusinessProcessParentID] AS [BusinessProcessParentID], 
+      [EUS_MA_BusinessProcesses].[BusinessProcessType] AS [BusinessProcessType], 
+      [EUS_MA_BusinessProcesses].[BusinessProcessFormName] AS [BusinessProcessFormName], 
+      [EUS_MA_BusinessProcesses].[BusinessProcessParameterValue] AS [BusinessProcessParameterValue], 
+      [EUS_MA_BusinessProcesses].[BusinessProcessStatus] AS [BusinessProcessStatus]
+      FROM [dbo].[EUS_MA_BusinessProcesses] AS [EUS_MA_BusinessProcesses]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="EUS_MA_Company" EntityType="ZulWebModel.Store.EUS_MA_Company" store:Type="Tables" store:Schema="dbo" store:Name="EUS_MA_Company">
+      <DefiningQuery>SELECT 
+      [EUS_MA_Company].[CompanyID] AS [CompanyID], 
+      [EUS_MA_Company].[CompanyName] AS [CompanyName], 
+      [EUS_MA_Company].[CompanyContactPerson] AS [CompanyContactPerson], 
+      [EUS_MA_Company].[CompanyAddress] AS [CompanyAddress], 
+      [EUS_MA_Company].[CountryCityID] AS [CountryCityID], 
+      [EUS_MA_Company].[CompanyPhone] AS [CompanyPhone], 
+      [EUS_MA_Company].[CompanyFax] AS [CompanyFax], 
+      [EUS_MA_Company].[CompanyEmail] AS [CompanyEmail], 
+      [EUS_MA_Company].[CompanyURL] AS [CompanyURL], 
+      [EUS_MA_Company].[CompanyLogo] AS [CompanyLogo], 
+      [EUS_MA_Company].[CompanyStatus] AS [CompanyStatus], 
+      [EUS_MA_Company].[LastUserID] AS [LastUserID], 
+      [EUS_MA_Company].[LastEditDateTime] AS [LastEditDateTime], 
+      [EUS_MA_Company].[Modifications] AS [Modifications], 
+      [EUS_MA_Company].[LastIP] AS [LastIP]
+      FROM [dbo].[EUS_MA_Company] AS [EUS_MA_Company]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="EUS_MA_Configuration" EntityType="ZulWebModel.Store.EUS_MA_Configuration" store:Type="Tables" store:Schema="dbo" store:Name="EUS_MA_Configuration">
+      <DefiningQuery>SELECT 
+      [EUS_MA_Configuration].[ConfigID] AS [ConfigID], 
+      [EUS_MA_Configuration].[ReceiptPrinter] AS [ReceiptPrinter], 
+      [EUS_MA_Configuration].[CashDrawerID] AS [CashDrawerID], 
+      [EUS_MA_Configuration].[BranchID] AS [BranchID], 
+      [EUS_MA_Configuration].[ReportPrinter] AS [ReportPrinter], 
+      [EUS_MA_Configuration].[OnePrinterForAllKitchen] AS [OnePrinterForAllKitchen], 
+      [EUS_MA_Configuration].[LastUserID] AS [LastUserID], 
+      [EUS_MA_Configuration].[LastEditDateTime] AS [LastEditDateTime], 
+      [EUS_MA_Configuration].[Modifications] AS [Modifications], 
+      [EUS_MA_Configuration].[LastIP] AS [LastIP]
+      FROM [dbo].[EUS_MA_Configuration] AS [EUS_MA_Configuration]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="EUS_MA_Users" EntityType="ZulWebModel.Store.EUS_MA_Users" store:Type="Tables" store:Schema="dbo" store:Name="EUS_MA_Users">
+      <DefiningQuery>SELECT 
+      [EUS_MA_Users].[UserID] AS [UserID], 
+      [EUS_MA_Users].[CountryCityID] AS [CountryCityID], 
+      [EUS_MA_Users].[BranchID] AS [BranchID], 
+      [EUS_MA_Users].[CompanyID] AS [CompanyID], 
+      [EUS_MA_Users].[UserName] AS [UserName], 
+      [EUS_MA_Users].[UserPassword] AS [UserPassword], 
+      [EUS_MA_Users].[CreationDate] AS [CreationDate], 
+      [EUS_MA_Users].[UserStatus] AS [UserStatus], 
+      [EUS_MA_Users].[ThemeID] AS [ThemeID], 
+      [EUS_MA_Users].[ThemePath] AS [ThemePath], 
+      [EUS_MA_Users].[UserTypeID] AS [UserTypeID], 
+      [EUS_MA_Users].[LastEditDateTime] AS [LastEditDateTime], 
+      [EUS_MA_Users].[Modifications] AS [Modifications], 
+      [EUS_MA_Users].[LastIP] AS [LastIP]
+      FROM [dbo].[EUS_MA_Users] AS [EUS_MA_Users]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="EUS_TR_UserPrivileges" EntityType="ZulWebModel.Store.EUS_TR_UserPrivileges" store:Type="Tables" store:Schema="dbo" store:Name="EUS_TR_UserPrivileges">
+      <DefiningQuery>SELECT 
+      [EUS_TR_UserPrivileges].[UserID] AS [UserID], 
+      [EUS_TR_UserPrivileges].[ERPModuleID] AS [ERPModuleID], 
+      [EUS_TR_UserPrivileges].[BusinessProcessID] AS [BusinessProcessID], 
+      [EUS_TR_UserPrivileges].[PrivilegeID] AS [PrivilegeID], 
+      [EUS_TR_UserPrivileges].[CreationDate] AS [CreationDate]
+      FROM [dbo].[EUS_TR_UserPrivileges] AS [EUS_TR_UserPrivileges]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="LM_DD_LeaveTypes" EntityType="ZulWebModel.Store.LM_DD_LeaveTypes" store:Type="Tables" store:Schema="dbo" store:Name="LM_DD_LeaveTypes">
+      <DefiningQuery>SELECT 
+      [LM_DD_LeaveTypes].[LeaveTypeID] AS [LeaveTypeID], 
+      [LM_DD_LeaveTypes].[LeaveTypeDesc] AS [LeaveTypeDesc], 
+      [LM_DD_LeaveTypes].[LeaveTotal] AS [LeaveTotal], 
+      [LM_DD_LeaveTypes].[LeaveColor] AS [LeaveColor], 
+      [LM_DD_LeaveTypes].[LeaveEncashable] AS [LeaveEncashable], 
+      [LM_DD_LeaveTypes].[LeaveEncashableMax] AS [LeaveEncashableMax], 
+      [LM_DD_LeaveTypes].[LeaveForward] AS [LeaveForward], 
+      [LM_DD_LeaveTypes].[LeaveForwardMax] AS [LeaveForwardMax], 
+      [LM_DD_LeaveTypes].[LeaveHoldMax] AS [LeaveHoldMax], 
+      [LM_DD_LeaveTypes].[LeaveTypeStatus] AS [LeaveTypeStatus], 
+      [LM_DD_LeaveTypes].[LastUserID] AS [LastUserID], 
+      [LM_DD_LeaveTypes].[LastEditDateTime] AS [LastEditDateTime], 
+      [LM_DD_LeaveTypes].[Modifications] AS [Modifications], 
+      [LM_DD_LeaveTypes].[LastIP] AS [LastIP]
+      FROM [dbo].[LM_DD_LeaveTypes] AS [LM_DD_LeaveTypes]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="LM_MA_Calendar" EntityType="ZulWebModel.Store.LM_MA_Calendar" store:Type="Tables" store:Schema="dbo" store:Name="LM_MA_Calendar">
+      <DefiningQuery>SELECT 
+      [LM_MA_Calendar].[CalendarID] AS [CalendarID], 
+      [LM_MA_Calendar].[CalendarDescription] AS [CalendarDescription], 
+      [LM_MA_Calendar].[CalendarDate] AS [CalendarDate], 
+      [LM_MA_Calendar].[LastUserID] AS [LastUserID], 
+      [LM_MA_Calendar].[LastEditDateTime] AS [LastEditDateTime], 
+      [LM_MA_Calendar].[Modifications] AS [Modifications], 
+      [LM_MA_Calendar].[LastIP] AS [LastIP]
+      FROM [dbo].[LM_MA_Calendar] AS [LM_MA_Calendar]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="LM_MA_FiscalYear" EntityType="ZulWebModel.Store.LM_MA_FiscalYear" store:Type="Tables" store:Schema="dbo" store:Name="LM_MA_FiscalYear">
+      <DefiningQuery>SELECT 
+      [LM_MA_FiscalYear].[FiscalYearID] AS [FiscalYearID], 
+      [LM_MA_FiscalYear].[FYStart] AS [FYStart], 
+      [LM_MA_FiscalYear].[FYEnd] AS [FYEnd], 
+      [LM_MA_FiscalYear].[FYStatus] AS [FYStatus], 
+      [LM_MA_FiscalYear].[LastUserID] AS [LastUserID], 
+      [LM_MA_FiscalYear].[LastEditDateTime] AS [LastEditDateTime], 
+      [LM_MA_FiscalYear].[Modifications] AS [Modifications], 
+      [LM_MA_FiscalYear].[LastIP] AS [LastIP]
+      FROM [dbo].[LM_MA_FiscalYear] AS [LM_MA_FiscalYear]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PR_DD_Allowance" EntityType="ZulWebModel.Store.PR_DD_Allowance" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PR_DD_Banks" EntityType="ZulWebModel.Store.PR_DD_Banks" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PR_DD_Branches" EntityType="ZulWebModel.Store.PR_DD_Branches" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PR_DD_LoanType" EntityType="ZulWebModel.Store.PR_DD_LoanType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PR_DD_PayMethod" EntityType="ZulWebModel.Store.PR_DD_PayMethod" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PR_MA_EmpSetup" EntityType="ZulWebModel.Store.PR_MA_EmpSetup" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PR_TR_AdvLoan" EntityType="ZulWebModel.Store.PR_TR_AdvLoan" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PR_TR_AdvLoanRecover" EntityType="ZulWebModel.Store.PR_TR_AdvLoanRecover" store:Type="Tables" store:Schema="dbo" store:Name="PR_TR_AdvLoanRecover">
+      <DefiningQuery>SELECT 
+      [PR_TR_AdvLoanRecover].[AdvLoanId] AS [AdvLoanId], 
+      [PR_TR_AdvLoanRecover].[RecoverID] AS [RecoverID], 
+      [PR_TR_AdvLoanRecover].[openbal] AS [openbal], 
+      [PR_TR_AdvLoanRecover].[recoveramt] AS [recoveramt], 
+      [PR_TR_AdvLoanRecover].[colosebal] AS [colosebal], 
+      [PR_TR_AdvLoanRecover].[recoverdate] AS [recoverdate], 
+      [PR_TR_AdvLoanRecover].[EmpID] AS [EmpID], 
+      [PR_TR_AdvLoanRecover].[RecoverType] AS [RecoverType], 
+      [PR_TR_AdvLoanRecover].[RecoverRemarks] AS [RecoverRemarks], 
+      [PR_TR_AdvLoanRecover].[CalenID] AS [CalenID]
+      FROM [dbo].[PR_TR_AdvLoanRecover] AS [PR_TR_AdvLoanRecover]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PR_TR_Allowance" EntityType="ZulWebModel.Store.PR_TR_Allowance" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PR_TR_Arrears" EntityType="ZulWebModel.Store.PR_TR_Arrears" store:Type="Tables" store:Schema="dbo" store:Name="PR_TR_Arrears">
+      <DefiningQuery>SELECT 
+      [PR_TR_Arrears].[ArrearID] AS [ArrearID], 
+      [PR_TR_Arrears].[Empid] AS [Empid], 
+      [PR_TR_Arrears].[ArrearType] AS [ArrearType], 
+      [PR_TR_Arrears].[ArrearDate] AS [ArrearDate], 
+      [PR_TR_Arrears].[ArrearAmt] AS [ArrearAmt], 
+      [PR_TR_Arrears].[ArrearDescription] AS [ArrearDescription], 
+      [PR_TR_Arrears].[ArrearRemarks] AS [ArrearRemarks], 
+      [PR_TR_Arrears].[ArrearPost] AS [ArrearPost], 
+      [PR_TR_Arrears].[ArrearPostingDate] AS [ArrearPostingDate]
+      FROM [dbo].[PR_TR_Arrears] AS [PR_TR_Arrears]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PR_TR_Calendar" EntityType="ZulWebModel.Store.PR_TR_Calendar" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PR_TR_Deducation" EntityType="ZulWebModel.Store.PR_TR_Deducation" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PR_TR_LateAdjustment" EntityType="ZulWebModel.Store.PR_TR_LateAdjustment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PR_TR_NETPAY" EntityType="ZulWebModel.Store.PR_TR_NETPAY" store:Type="Tables" store:Schema="dbo" store:Name="PR_TR_NETPAY">
+      <DefiningQuery>SELECT 
+      [PR_TR_NETPAY].[EmpId] AS [EmpId], 
+      [PR_TR_NETPAY].[CalenID] AS [CalenID], 
+      [PR_TR_NETPAY].[DepartmentID] AS [DepartmentID], 
+      [PR_TR_NETPAY].[DesignationID] AS [DesignationID], 
+      [PR_TR_NETPAY].[payprocessdate] AS [payprocessdate], 
+      [PR_TR_NETPAY].[basicpay] AS [basicpay], 
+      [PR_TR_NETPAY].[houserent] AS [houserent], 
+      [PR_TR_NETPAY].[utilities] AS [utilities], 
+      [PR_TR_NETPAY].[mobile] AS [mobile], 
+      [PR_TR_NETPAY].[fuel] AS [fuel], 
+      [PR_TR_NETPAY].[overtimeminutes] AS [overtimeminutes], 
+      [PR_TR_NETPAY].[overtimeamount] AS [overtimeamount], 
+      [PR_TR_NETPAY].[otherdeductions] AS [otherdeductions], 
+      [PR_TR_NETPAY].[canteen] AS [canteen], 
+      [PR_TR_NETPAY].[Vehicle] AS [Vehicle], 
+      [PR_TR_NETPAY].[itax] AS [itax], 
+      [PR_TR_NETPAY].[advancepayback] AS [advancepayback], 
+      [PR_TR_NETPAY].[loanpayback] AS [loanpayback], 
+      [PR_TR_NETPAY].[Vehicleloanpayback] AS [Vehicleloanpayback], 
+      [PR_TR_NETPAY].[netpayment] AS [netpayment], 
+      [PR_TR_NETPAY].[workingdays] AS [workingdays], 
+      [PR_TR_NETPAY].[presentdays] AS [presentdays], 
+      [PR_TR_NETPAY].[absentdays] AS [absentdays], 
+      [PR_TR_NETPAY].[latedays] AS [latedays], 
+      [PR_TR_NETPAY].[CL] AS [CL], 
+      [PR_TR_NETPAY].[SL] AS [SL], 
+      [PR_TR_NETPAY].[AL] AS [AL], 
+      [PR_TR_NETPAY].[OL] AS [OL], 
+      [PR_TR_NETPAY].[TotalMonthDays] AS [TotalMonthDays], 
+      [PR_TR_NETPAY].[TotalHolyDays] AS [TotalHolyDays], 
+      [PR_TR_NETPAY].[PayMethodID] AS [PayMethodID], 
+      [PR_TR_NETPAY].[BankID] AS [BankID], 
+      [PR_TR_NETPAY].[BranchID] AS [BranchID], 
+      [PR_TR_NETPAY].[AccountNo] AS [AccountNo], 
+      [PR_TR_NETPAY].[AGross] AS [AGross], 
+      [PR_TR_NETPAY].[PaymentDays] AS [PaymentDays], 
+      [PR_TR_NETPAY].[CollectArrears] AS [CollectArrears], 
+      [PR_TR_NETPAY].[PayArrears] AS [PayArrears], 
+      [PR_TR_NETPAY].[CollectArrearsDesc] AS [CollectArrearsDesc], 
+      [PR_TR_NETPAY].[PayArrearsDesc] AS [PayArrearsDesc], 
+      [PR_TR_NETPAY].[CollectArrearsRem] AS [CollectArrearsRem], 
+      [PR_TR_NETPAY].[PayArrearsRem] AS [PayArrearsRem], 
+      [PR_TR_NETPAY].[LateDeduction] AS [LateDeduction], 
+      [PR_TR_NETPAY].[OtherDeduction] AS [OtherDeduction]
+      FROM [dbo].[PR_TR_NETPAY] AS [PR_TR_NETPAY]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PR_TR_Salary" EntityType="ZulWebModel.Store.PR_TR_Salary" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PR_TR_StaffDeductions" EntityType="ZulWebModel.Store.PR_TR_StaffDeductions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Rdr_Configuration" EntityType="ZulWebModel.Store.Rdr_Configuration" store:Type="Tables" store:Schema="dbo" store:Name="Rdr_Configuration">
+      <DefiningQuery>SELECT 
+      [Rdr_Configuration].[ReaderID] AS [ReaderID], 
+      [Rdr_Configuration].[ReaderDescription] AS [ReaderDescription], 
+      [Rdr_Configuration].[ReaderConnected] AS [ReaderConnected], 
+      [Rdr_Configuration].[ReaderConnType] AS [ReaderConnType], 
+      [Rdr_Configuration].[ReaderComPort] AS [ReaderComPort], 
+      [Rdr_Configuration].[ReaderBaud] AS [ReaderBaud], 
+      [Rdr_Configuration].[ReaderModPhone] AS [ReaderModPhone], 
+      [Rdr_Configuration].[ReaderModInitStr] AS [ReaderModInitStr], 
+      [Rdr_Configuration].[ReaderHostIP] AS [ReaderHostIP], 
+      [Rdr_Configuration].[ReaderEPort] AS [ReaderEPort], 
+      [Rdr_Configuration].[ReaderSno] AS [ReaderSno], 
+      [Rdr_Configuration].[ReaderUsersCap] AS [ReaderUsersCap], 
+      [Rdr_Configuration].[ReaderUsersEnr] AS [ReaderUsersEnr], 
+      [Rdr_Configuration].[ReaderTransCap] AS [ReaderTransCap], 
+      [Rdr_Configuration].[ReaderUsedFor] AS [ReaderUsedFor], 
+      [Rdr_Configuration].[ReaderENetConverter] AS [ReaderENetConverter], 
+      [Rdr_Configuration].[ReaderRStatus] AS [ReaderRStatus], 
+      [Rdr_Configuration].[ReaderDevType] AS [ReaderDevType], 
+      [Rdr_Configuration].[LastUserID] AS [LastUserID], 
+      [Rdr_Configuration].[LastEditDateTime] AS [LastEditDateTime], 
+      [Rdr_Configuration].[Modifications] AS [Modifications], 
+      [Rdr_Configuration].[LastIP] AS [LastIP]
+      FROM [dbo].[Rdr_Configuration] AS [Rdr_Configuration]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Rdr_Ext_Config" EntityType="ZulWebModel.Store.Rdr_Ext_Config" store:Type="Tables" store:Schema="dbo" store:Name="Rdr_Ext_Config">
+      <DefiningQuery>SELECT 
+      [Rdr_Ext_Config].[ReadConfigId] AS [ReadConfigId], 
+      [Rdr_Ext_Config].[Custom_Start] AS [Custom_Start], 
+      [Rdr_Ext_Config].[Custom_Length] AS [Custom_Length], 
+      [Rdr_Ext_Config].[Time_Start] AS [Time_Start], 
+      [Rdr_Ext_Config].[Time_Length] AS [Time_Length], 
+      [Rdr_Ext_Config].[Extra_Start] AS [Extra_Start], 
+      [Rdr_Ext_Config].[Extra_Length] AS [Extra_Length], 
+      [Rdr_Ext_Config].[Status_Start] AS [Status_Start], 
+      [Rdr_Ext_Config].[Status_Length] AS [Status_Length], 
+      [Rdr_Ext_Config].[EmpID_Start] AS [EmpID_Start], 
+      [Rdr_Ext_Config].[EmpID_Length] AS [EmpID_Length], 
+      [Rdr_Ext_Config].[MachId_Start] AS [MachId_Start], 
+      [Rdr_Ext_Config].[MachId_Length] AS [MachId_Length], 
+      [Rdr_Ext_Config].[TaCode_Start] AS [TaCode_Start], 
+      [Rdr_Ext_Config].[TaCode_Length] AS [TaCode_Length], 
+      [Rdr_Ext_Config].[Year_Start] AS [Year_Start], 
+      [Rdr_Ext_Config].[Year_Length] AS [Year_Length], 
+      [Rdr_Ext_Config].[Month_Start] AS [Month_Start], 
+      [Rdr_Ext_Config].[Month_Length] AS [Month_Length], 
+      [Rdr_Ext_Config].[Day_Start] AS [Day_Start], 
+      [Rdr_Ext_Config].[Day_Length] AS [Day_Length], 
+      [Rdr_Ext_Config].[LastUserID] AS [LastUserID], 
+      [Rdr_Ext_Config].[LastEditDateTime] AS [LastEditDateTime], 
+      [Rdr_Ext_Config].[Modifications] AS [Modifications], 
+      [Rdr_Ext_Config].[LastIP] AS [LastIP]
+      FROM [dbo].[Rdr_Ext_Config] AS [Rdr_Ext_Config]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Rdr_Messages" EntityType="ZulWebModel.Store.Rdr_Messages" store:Type="Tables" store:Schema="dbo" store:Name="Rdr_Messages">
+      <DefiningQuery>SELECT 
+      [Rdr_Messages].[Reader_MsgID] AS [Reader_MsgID], 
+      [Rdr_Messages].[Reader_MsgDesc] AS [Reader_MsgDesc]
+      FROM [dbo].[Rdr_Messages] AS [Rdr_Messages]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Rdr_TxtFile" EntityType="ZulWebModel.Store.Rdr_TxtFile" store:Type="Tables" store:Schema="dbo" store:Name="Rdr_TxtFile">
+      <DefiningQuery>SELECT 
+      [Rdr_TxtFile].[TrNo] AS [TrNo], 
+      [Rdr_TxtFile].[EmpID] AS [EmpID], 
+      [Rdr_TxtFile].[TrDate] AS [TrDate], 
+      [Rdr_TxtFile].[TrTime] AS [TrTime], 
+      [Rdr_TxtFile].[NumTime] AS [NumTime], 
+      [Rdr_TxtFile].[TrType] AS [TrType], 
+      [Rdr_TxtFile].[TrShiftID] AS [TrShiftID], 
+      [Rdr_TxtFile].[NewTrDate] AS [NewTrDate], 
+      [Rdr_TxtFile].[NewTrTime] AS [NewTrTime], 
+      [Rdr_TxtFile].[NewNumTime] AS [NewNumTime], 
+      [Rdr_TxtFile].[NewTrType] AS [NewTrType], 
+      [Rdr_TxtFile].[NewTrShiftID] AS [NewTrShiftID], 
+      [Rdr_TxtFile].[MachineID] AS [MachineID], 
+      [Rdr_TxtFile].[MachineOrAdditional] AS [MachineOrAdditional], 
+      [Rdr_TxtFile].[isdeleted] AS [isdeleted], 
+      [Rdr_TxtFile].[IsFinal] AS [IsFinal], 
+      [Rdr_TxtFile].[isDateChange] AS [isDateChange], 
+      [Rdr_TxtFile].[IsTimeChange] AS [IsTimeChange], 
+      [Rdr_TxtFile].[IsTypeChange] AS [IsTypeChange], 
+      [Rdr_TxtFile].[IsShiftChange] AS [IsShiftChange], 
+      [Rdr_TxtFile].[LastUserID] AS [LastUserID], 
+      [Rdr_TxtFile].[LastEditDateTime] AS [LastEditDateTime], 
+      [Rdr_TxtFile].[Modifications] AS [Modifications], 
+      [Rdr_TxtFile].[LastIP] AS [LastIP]
+      FROM [dbo].[Rdr_TxtFile] AS [Rdr_TxtFile]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="SalaryBranchDistribute" EntityType="ZulWebModel.Store.SalaryBranchDistribute" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vw_TimeSheetByRow1" EntityType="ZulWebModel.Store.Vw_TimeSheetByRow1" store:Type="Views" store:Schema="dbo" store:Name="Vw_TimeSheetByRow1">
+      <DefiningQuery>SELECT 
+      [Vw_TimeSheetByRow1].[EmpID] AS [EmpID], 
+      [Vw_TimeSheetByRow1].[TrDate] AS [TrDate], 
+      [Vw_TimeSheetByRow1].[TrTime] AS [TrTime], 
+      [Vw_TimeSheetByRow1].[RoasterID] AS [RoasterID], 
+      [Vw_TimeSheetByRow1].[WeekNo] AS [WeekNo], 
+      [Vw_TimeSheetByRow1].[ReaderID] AS [ReaderID], 
+      [Vw_TimeSheetByRow1].[ShiftID] AS [ShiftID], 
+      [Vw_TimeSheetByRow1].[ReaderValue] AS [ReaderValue], 
+      [Vw_TimeSheetByRow1].[LastPunch_Date] AS [LastPunch_Date], 
+      [Vw_TimeSheetByRow1].[LastPunch_Time] AS [LastPunch_Time], 
+      [Vw_TimeSheetByRow1].[EmpFirstName] AS [EmpFirstName], 
+      [Vw_TimeSheetByRow1].[EmpMiddleName] AS [EmpMiddleName], 
+      [Vw_TimeSheetByRow1].[EmpLastName] AS [EmpLastName], 
+      [Vw_TimeSheetByRow1].[DeptID] AS [DeptID], 
+      [Vw_TimeSheetByRow1].[Department] AS [Department], 
+      [Vw_TimeSheetByRow1].[DesigID] AS [DesigID], 
+      [Vw_TimeSheetByRow1].[DesigDescription] AS [DesigDescription], 
+      [Vw_TimeSheetByRow1].[ShiftDescription] AS [ShiftDescription], 
+      [Vw_TimeSheetByRow1].[ShiftStartTime] AS [ShiftStartTime], 
+      [Vw_TimeSheetByRow1].[ShiftEndTime] AS [ShiftEndTime], 
+      [Vw_TimeSheetByRow1].[ShiftGracePeriod] AS [ShiftGracePeriod], 
+      [Vw_TimeSheetByRow1].[ShiftProlong] AS [ShiftProlong], 
+      [Vw_TimeSheetByRow1].[CompanyName] AS [CompanyName], 
+      [Vw_TimeSheetByRow1].[CompanyLogo] AS [CompanyLogo], 
+      [Vw_TimeSheetByRow1].[extra_status] AS [extra_status], 
+      [Vw_TimeSheetByRow1].[BranchID] AS [BranchID], 
+      [Vw_TimeSheetByRow1].[EmpStatus] AS [EmpStatus], 
+      [Vw_TimeSheetByRow1].[Code] AS [Code], 
+      [Vw_TimeSheetByRow1].[DeptDesc] AS [DeptDesc], 
+      [Vw_TimeSheetByRow1].[EmpStatusID] AS [EmpStatusID]
+      FROM [dbo].[Vw_TimeSheetByRow1] AS [Vw_TimeSheetByRow1]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Vw_TimeSheetByRow2" EntityType="ZulWebModel.Store.Vw_TimeSheetByRow2" store:Type="Views" store:Schema="dbo" store:Name="Vw_TimeSheetByRow2">
+      <DefiningQuery>SELECT 
+      [Vw_TimeSheetByRow2].[EmpID] AS [EmpID], 
+      [Vw_TimeSheetByRow2].[TrDate] AS [TrDate], 
+      [Vw_TimeSheetByRow2].[TrTime] AS [TrTime], 
+      [Vw_TimeSheetByRow2].[RoasterID] AS [RoasterID], 
+      [Vw_TimeSheetByRow2].[WeekNo] AS [WeekNo], 
+      [Vw_TimeSheetByRow2].[ReaderID] AS [ReaderID], 
+      [Vw_TimeSheetByRow2].[ShiftID] AS [ShiftID], 
+      [Vw_TimeSheetByRow2].[ReaderValue] AS [ReaderValue], 
+      [Vw_TimeSheetByRow2].[LastPunch_Date] AS [LastPunch_Date], 
+      [Vw_TimeSheetByRow2].[LastPunch_Time] AS [LastPunch_Time], 
+      [Vw_TimeSheetByRow2].[EmpFirstName] AS [EmpFirstName], 
+      [Vw_TimeSheetByRow2].[EmpMiddleName] AS [EmpMiddleName], 
+      [Vw_TimeSheetByRow2].[EmpLastName] AS [EmpLastName], 
+      [Vw_TimeSheetByRow2].[DeptID] AS [DeptID], 
+      [Vw_TimeSheetByRow2].[Department] AS [Department], 
+      [Vw_TimeSheetByRow2].[DesigID] AS [DesigID], 
+      [Vw_TimeSheetByRow2].[DesigDescription] AS [DesigDescription], 
+      [Vw_TimeSheetByRow2].[ShiftDescription] AS [ShiftDescription], 
+      [Vw_TimeSheetByRow2].[ShiftStartTime] AS [ShiftStartTime], 
+      [Vw_TimeSheetByRow2].[ShiftEndTime] AS [ShiftEndTime], 
+      [Vw_TimeSheetByRow2].[ShiftGracePeriod] AS [ShiftGracePeriod], 
+      [Vw_TimeSheetByRow2].[ShiftProlong] AS [ShiftProlong], 
+      [Vw_TimeSheetByRow2].[CompanyName] AS [CompanyName], 
+      [Vw_TimeSheetByRow2].[CompanyLogo] AS [CompanyLogo], 
+      [Vw_TimeSheetByRow2].[extra_status] AS [extra_status], 
+      [Vw_TimeSheetByRow2].[BranchID] AS [BranchID], 
+      [Vw_TimeSheetByRow2].[EmpStatus] AS [EmpStatus], 
+      [Vw_TimeSheetByRow2].[Code] AS [Code], 
+      [Vw_TimeSheetByRow2].[DeptDesc] AS [DeptDesc], 
+      [Vw_TimeSheetByRow2].[EmpStatusID] AS [EmpStatusID]
+      FROM [dbo].[Vw_TimeSheetByRow2] AS [Vw_TimeSheetByRow2]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.ATT_DD_Shifts' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="ATT_DD_Shifts">
+    <Key>
+      <PropertyRef Name="ShiftId" />
+    </Key>
+    <Property Name="ShiftId" Type="int" Nullable="false" />
+    <Property Name="ShiftDescription" Type="nvarchar" MaxLength="50" />
+    <Property Name="ShiftEntryStartTime" Type="nvarchar" MaxLength="20" />
+    <Property Name="ShiftStartTime" Type="nvarchar" MaxLength="20" />
+    <Property Name="ShiftEndTime" Type="nvarchar" MaxLength="20" />
+    <Property Name="ShiftGracePeriod" Type="nvarchar" MaxLength="20" />
+    <Property Name="ShiftProlong" Type="int" />
+    <Property Name="ShiftStatus" Type="int" />
+    <Property Name="LastUserID" Type="bigint" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="bigint" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.ATT_MA_EmployeeDutyRoaster_Detail' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="ATT_MA_EmployeeDutyRoaster_Detail">
+    <Key>
+      <PropertyRef Name="RoasterID" />
+    </Key>
+    <Property Name="RoasterID" Type="int" Nullable="false" />
+    <Property Name="WeekNo" Type="int" />
+    <Property Name="Mon_Shift" Type="int" />
+    <Property Name="Tue_Shift" Type="int" />
+    <Property Name="Wed_Shift" Type="int" />
+    <Property Name="Thu_Shift" Type="int" />
+    <Property Name="Fri_Shift" Type="int" />
+    <Property Name="Sat_Shift" Type="int" />
+    <Property Name="Sun_Shift" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.ATT_MA_EmployeeDutyRoaster_Main' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="ATT_MA_EmployeeDutyRoaster_Main">
+    <Key>
+      <PropertyRef Name="RoasterID" />
+      <PropertyRef Name="EmpID" />
+    </Key>
+    <Property Name="RoasterID" Type="int" Nullable="false" />
+    <Property Name="EmpID" Type="int" Nullable="false" />
+    <Property Name="EmpRoasterStatus" Type="int" />
+    <Property Name="EmpRoasterApplyDate" Type="datetime" />
+    <Property Name="LastUserID" Type="int" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="int" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.ATT_MA_Employees' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="ATT_MA_Employees">
+    <Key>
+      <PropertyRef Name="EmpID" />
+      <PropertyRef Name="EmpFirstName" />
+    </Key>
+    <Property Name="EmpID" Type="int" Nullable="false" />
+    <Property Name="EmpFirstName" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="EmpMiddleName" Type="nvarchar" MaxLength="20" />
+    <Property Name="EmpLastName" Type="nvarchar" MaxLength="20" />
+    <Property Name="EmpFatherName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EmpGender" Type="int" />
+    <Property Name="EmpSalutation" Type="int" />
+    <Property Name="EmpDOB" Type="datetime" />
+    <Property Name="EmpAddress" Type="nvarchar" MaxLength="255" />
+    <Property Name="CountryCityID" Type="int" />
+    <Property Name="EmpJoinDate" Type="datetime" />
+    <Property Name="EmpPhone" Type="nvarchar" MaxLength="20" />
+    <Property Name="EmpMobile" Type="nvarchar" MaxLength="20" />
+    <Property Name="EmpEmail" Type="nvarchar" MaxLength="50" />
+    <Property Name="ReligionID" Type="int" />
+    <Property Name="EmpMaritalStatus" Type="int" />
+    <Property Name="EmpCNIC" Type="nvarchar" MaxLength="20" />
+    <Property Name="BranchID" Type="int" />
+    <Property Name="DeptID" Type="int" />
+    <Property Name="DesigID" Type="int" />
+    <Property Name="EmpConfirmationDate" Type="datetime" />
+    <Property Name="EmpLeftDate" Type="datetime" />
+    <Property Name="EmpStatus" Type="int" />
+    <Property Name="LastUserID" Type="int" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="int" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="20" />
+    <Property Name="EmpPic" Type="image" />
+    <Property Name="LeftReason" Type="int" />
+    <Property Name="EmpHPTemplate" Type="nvarchar" MaxLength="50" />
+    <Property Name="Code" Type="nvarchar" MaxLength="1000" />
+    <Property Name="OTAllowed" Type="int" />
+    <Property Name="LateAllowed" Type="int" />
+    <Property Name="EmpStatusID" Type="int" />
+    <Property Name="OT_From" Type="int" />
+    <Property Name="OT_To" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.ATT_MA_EmpShifts_Detail' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="ATT_MA_EmpShifts_Detail">
+    <Key>
+      <PropertyRef Name="EmpShiftID" />
+      <PropertyRef Name="ShiftID" />
+    </Key>
+    <Property Name="EmpShiftID" Type="int" Nullable="false" />
+    <Property Name="ShiftID" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.ATT_MA_EmpShifts_Main' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="ATT_MA_EmpShifts_Main">
+    <Key>
+      <PropertyRef Name="EmpShiftID" />
+      <PropertyRef Name="EmpID" />
+      <PropertyRef Name="EmpShiftStatus" />
+    </Key>
+    <Property Name="EmpShiftID" Type="int" Nullable="false" />
+    <Property Name="EmpID" Type="int" Nullable="false" />
+    <Property Name="EmpShiftStatus" Type="int" Nullable="false" />
+    <Property Name="EmpShiftApplyDate" Type="datetime" />
+    <Property Name="LastUserID" Type="int" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="int" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.ATT_MA_EmpStatus' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="ATT_MA_EmpStatus">
+    <Key>
+      <PropertyRef Name="EmpStatusID" />
+    </Key>
+    <Property Name="EmpStatusID" Type="int" Nullable="false" />
+    <Property Name="EmpStatusDesc" Type="nvarchar" MaxLength="100" />
+    <Property Name="EmpStatusFlag" Type="int" />
+    <Property Name="LasrUserID" Type="int" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="int" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.ATT_TR_PunchMissAndDelay' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="ATT_TR_PunchMissAndDelay">
+    <Key>
+      <PropertyRef Name="PunchID" />
+    </Key>
+    <Property Name="PunchID" Type="int" Nullable="false" />
+    <Property Name="EmpID" Type="int" />
+    <Property Name="DateOfMiss" Type="datetime" />
+    <Property Name="Reason" Type="nvarchar" MaxLength="255" />
+    <Property Name="EntryTime" Type="nvarchar" MaxLength="20" />
+    <Property Name="EntryType" Type="int" />
+    <Property Name="ApproveID" Type="int" />
+    <Property Name="ApprovedDate" Type="datetime" />
+    <Property Name="LastUserID" Type="int" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="int" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="20" />
+    <Property Name="DateOfMissOut" Type="datetime" />
+    <Property Name="EntryTimeOUT" Type="nvarchar" MaxLength="20" />
+    <Property Name="Posted" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.EUS_DD_Cities' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="EUS_DD_Cities">
+    <Key>
+      <PropertyRef Name="CountryID" />
+      <PropertyRef Name="CountryCityID" />
+    </Key>
+    <Property Name="CountryID" Type="int" Nullable="false" />
+    <Property Name="CountryCityID" Type="bigint" Nullable="false" />
+    <Property Name="CityDescription" Type="nvarchar" MaxLength="100" />
+    <Property Name="LastUserID" Type="bigint" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="bigint" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.EUS_DD_Countries' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="EUS_DD_Countries">
+    <Key>
+      <PropertyRef Name="CountryID" />
+    </Key>
+    <Property Name="CountryID" Type="int" Nullable="false" />
+    <Property Name="CountryDescription" Type="nvarchar" MaxLength="100" />
+    <Property Name="LastUserID" Type="bigint" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="bigint" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.EUS_DD_Departments' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="EUS_DD_Departments">
+    <Key>
+      <PropertyRef Name="DeptID" />
+      <PropertyRef Name="Department" />
+    </Key>
+    <Property Name="DeptID" Type="int" Nullable="false" />
+    <Property Name="Department" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="DeptStatus" Type="int" />
+    <Property Name="LastUserID" Type="int" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="int" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="20" />
+    <Property Name="DepartmentLevel" Type="int" />
+    <Property Name="DepartmentParent" Type="int" />
+    <Property Name="DepartmentType" Type="int" />
+    <Property Name="DeptCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeptDesc" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.EUS_DD_Designations' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="EUS_DD_Designations">
+    <Key>
+      <PropertyRef Name="DesigID" />
+      <PropertyRef Name="DesigDescription" />
+    </Key>
+    <Property Name="DesigID" Type="int" Nullable="false" />
+    <Property Name="DesigDescription" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="DesigStatus" Type="int" />
+    <Property Name="LastUserID" Type="int" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="int" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.EUS_DD_ERPModules' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="EUS_DD_ERPModules">
+    <Key>
+      <PropertyRef Name="ERPModuleID" />
+      <PropertyRef Name="ModuleName" />
+    </Key>
+    <Property Name="ERPModuleID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ModuleName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ModuleNameShort" Type="nvarchar" MaxLength="3" />
+    <Property Name="ModuleStatus" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.EUS_DD_JobTypes' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="EUS_DD_JobTypes">
+    <Key>
+      <PropertyRef Name="JobID" />
+      <PropertyRef Name="JobDescription" />
+    </Key>
+    <Property Name="JobID" Type="int" Nullable="false" />
+    <Property Name="JobDescription" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="JobStatus" Type="int" />
+    <Property Name="LastUserID" Type="int" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="int" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.EUS_DD_Privileges' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="EUS_DD_Privileges">
+    <Key>
+      <PropertyRef Name="PrivilegeID" />
+      <PropertyRef Name="PrivilegeName" />
+    </Key>
+    <Property Name="PrivilegeID" Type="int" Nullable="false" />
+    <Property Name="PrivilegeName" Type="nvarchar" Nullable="false" MaxLength="15" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.EUS_DD_Religion' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="EUS_DD_Religion">
+    <Key>
+      <PropertyRef Name="ReligionID" />
+      <PropertyRef Name="ReligionDesc" />
+    </Key>
+    <Property Name="ReligionID" Type="int" Nullable="false" />
+    <Property Name="ReligionDesc" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ReligionStatus" Type="int" />
+    <Property Name="LastUserID" Type="int" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="int" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.EUS_DD_UserTypes' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="EUS_DD_UserTypes">
+    <Key>
+      <PropertyRef Name="UserTypeID" />
+      <PropertyRef Name="UserTypeName" />
+    </Key>
+    <Property Name="UserTypeID" Type="int" Nullable="false" />
+    <Property Name="UserTypeName" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.EUS_MA_BP_Privilege' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="EUS_MA_BP_Privilege">
+    <Key>
+      <PropertyRef Name="BusinessProcessID" />
+      <PropertyRef Name="PrivilegeID" />
+    </Key>
+    <Property Name="BusinessProcessID" Type="int" Nullable="false" />
+    <Property Name="PrivilegeID" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.EUS_MA_Branches' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="EUS_MA_Branches">
+    <Key>
+      <PropertyRef Name="BranchID" />
+      <PropertyRef Name="BranchName" />
+    </Key>
+    <Property Name="CompanyID" Type="int" />
+    <Property Name="BranchID" Type="int" Nullable="false" />
+    <Property Name="BranchName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="BranchAddress" Type="nvarchar" MaxLength="255" />
+    <Property Name="BranchContactPerson" Type="nvarchar" MaxLength="50" />
+    <Property Name="CountryCityID" Type="bigint" />
+    <Property Name="BranchPhone" Type="nvarchar" MaxLength="50" />
+    <Property Name="BranchFax" Type="nvarchar" MaxLength="50" />
+    <Property Name="BranchEmail" Type="nvarchar" MaxLength="50" />
+    <Property Name="BranchURL" Type="nvarchar" MaxLength="50" />
+    <Property Name="BranchStatus" Type="int" />
+    <Property Name="LastUserID" Type="bigint" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="bigint" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.EUS_MA_BusinessProcesses' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="EUS_MA_BusinessProcesses">
+    <Key>
+      <PropertyRef Name="BusinessProcessID" />
+      <PropertyRef Name="ERPModuleID" />
+      <PropertyRef Name="BusinessProcessName" />
+    </Key>
+    <Property Name="BusinessProcessID" Type="int" Nullable="false" />
+    <Property Name="ERPModuleID" Type="int" Nullable="false" />
+    <Property Name="BusinessProcessName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="BusinessProcessNameShort" Type="nvarchar" MaxLength="50" />
+    <Property Name="BusinessProcessLevel" Type="int" />
+    <Property Name="BusinessProcessParentID" Type="int" />
+    <Property Name="BusinessProcessType" Type="int" />
+    <Property Name="BusinessProcessFormName" Type="nvarchar" MaxLength="255" />
+    <Property Name="BusinessProcessParameterValue" Type="int" />
+    <Property Name="BusinessProcessStatus" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.EUS_MA_Company' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="EUS_MA_Company">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+      <PropertyRef Name="CompanyName" />
+    </Key>
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="CompanyName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="CompanyContactPerson" Type="nvarchar" MaxLength="50" />
+    <Property Name="CompanyAddress" Type="nvarchar" MaxLength="255" />
+    <Property Name="CountryCityID" Type="bigint" />
+    <Property Name="CompanyPhone" Type="nvarchar" MaxLength="50" />
+    <Property Name="CompanyFax" Type="nvarchar" MaxLength="50" />
+    <Property Name="CompanyEmail" Type="nvarchar" MaxLength="50" />
+    <Property Name="CompanyURL" Type="nvarchar" MaxLength="50" />
+    <Property Name="CompanyLogo" Type="image" />
+    <Property Name="CompanyStatus" Type="int" />
+    <Property Name="LastUserID" Type="bigint" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="bigint" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.EUS_MA_Configuration' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="EUS_MA_Configuration">
+    <Key>
+      <PropertyRef Name="ConfigID" />
+      <PropertyRef Name="CashDrawerID" />
+    </Key>
+    <Property Name="ConfigID" Type="int" Nullable="false" />
+    <Property Name="ReceiptPrinter" Type="nvarchar" MaxLength="255" />
+    <Property Name="CashDrawerID" Type="int" Nullable="false" />
+    <Property Name="BranchID" Type="int" />
+    <Property Name="ReportPrinter" Type="nvarchar" MaxLength="255" />
+    <Property Name="OnePrinterForAllKitchen" Type="int" />
+    <Property Name="LastUserID" Type="int" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="int" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="25" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.EUS_MA_Users' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="EUS_MA_Users">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="CountryCityID" />
+      <PropertyRef Name="BranchID" />
+      <PropertyRef Name="CompanyID" />
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="UserPassword" />
+      <PropertyRef Name="CreationDate" />
+      <PropertyRef Name="UserStatus" />
+    </Key>
+    <Property Name="UserID" Type="bigint" Nullable="false" />
+    <Property Name="CountryCityID" Type="bigint" Nullable="false" />
+    <Property Name="BranchID" Type="int" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="UserPassword" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="UserStatus" Type="int" Nullable="false" />
+    <Property Name="ThemeID" Type="int" />
+    <Property Name="ThemePath" Type="nvarchar" MaxLength="255" />
+    <Property Name="UserTypeID" Type="int" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="int" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.EUS_TR_UserPrivileges' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="EUS_TR_UserPrivileges">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="ERPModuleID" />
+      <PropertyRef Name="BusinessProcessID" />
+      <PropertyRef Name="PrivilegeID" />
+      <PropertyRef Name="CreationDate" />
+    </Key>
+    <Property Name="UserID" Type="bigint" Nullable="false" />
+    <Property Name="ERPModuleID" Type="int" Nullable="false" />
+    <Property Name="BusinessProcessID" Type="int" Nullable="false" />
+    <Property Name="PrivilegeID" Type="int" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.LM_DD_LeaveTypes' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="LM_DD_LeaveTypes">
+    <Key>
+      <PropertyRef Name="LeaveTypeID" />
+      <PropertyRef Name="LeaveTypeDesc" />
+    </Key>
+    <Property Name="LeaveTypeID" Type="int" Nullable="false" />
+    <Property Name="LeaveTypeDesc" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="LeaveTotal" Type="int" />
+    <Property Name="LeaveColor" Type="nvarchar" MaxLength="50" />
+    <Property Name="LeaveEncashable" Type="int" />
+    <Property Name="LeaveEncashableMax" Type="int" />
+    <Property Name="LeaveForward" Type="int" />
+    <Property Name="LeaveForwardMax" Type="int" />
+    <Property Name="LeaveHoldMax" Type="int" />
+    <Property Name="LeaveTypeStatus" Type="int" />
+    <Property Name="LastUserID" Type="int" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="int" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.LM_MA_Calendar' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="LM_MA_Calendar">
+    <Key>
+      <PropertyRef Name="CalendarID" />
+      <PropertyRef Name="CalendarDescription" />
+    </Key>
+    <Property Name="CalendarID" Type="int" Nullable="false" />
+    <Property Name="CalendarDescription" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CalendarDate" Type="datetime" />
+    <Property Name="LastUserID" Type="int" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="int" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.LM_MA_FiscalYear' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="LM_MA_FiscalYear">
+    <Key>
+      <PropertyRef Name="FiscalYearID" />
+      <PropertyRef Name="FYStart" />
+      <PropertyRef Name="FYEnd" />
+    </Key>
+    <Property Name="FiscalYearID" Type="int" Nullable="false" />
+    <Property Name="FYStart" Type="datetime" Nullable="false" />
+    <Property Name="FYEnd" Type="datetime" Nullable="false" />
+    <Property Name="FYStatus" Type="int" />
+    <Property Name="LastUserID" Type="int" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="int" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="PR_DD_Allowance">
+    <Key>
+      <PropertyRef Name="AllowanceID" />
+    </Key>
+    <Property Name="AllowanceID" Type="int" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="50" />
+    <Property Name="LocationID" Type="int" />
+    <Property Name="CityID" Type="int" />
+    <Property Name="OfficeID" Type="int" />
+    <Property Name="AllowPercentage" Type="int" />
+    <Property Name="Tax" Type="bit" />
+  </EntityType>
+  <EntityType Name="PR_DD_Banks">
+    <Key>
+      <PropertyRef Name="BankID" />
+    </Key>
+    <Property Name="BankID" Type="int" Nullable="false" />
+    <Property Name="BankDesc" Type="nvarchar" MaxLength="100" />
+    <Property Name="ShortName" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="PR_DD_Branches">
+    <Key>
+      <PropertyRef Name="BankBranchID" />
+    </Key>
+    <Property Name="BankBranchID" Type="int" Nullable="false" />
+    <Property Name="BankID" Type="int" />
+    <Property Name="BranchDescription" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar" MaxLength="50" />
+    <Property Name="CountryCidyID" Type="int" />
+  </EntityType>
+  <EntityType Name="PR_DD_LoanType">
+    <Key>
+      <PropertyRef Name="LoanTypeID" />
+    </Key>
+    <Property Name="LoanTypeID" Type="int" Nullable="false" />
+    <Property Name="LoanTypeDesc" Type="nvarchar" MaxLength="50" />
+    <Property Name="Loan_Adv" Type="int" />
+    <Property Name="LoanTypeStatus" Type="int" />
+    <Property Name="LastUserID" Type="int" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="int" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="PR_DD_PayMethod">
+    <Key>
+      <PropertyRef Name="PayMethodID" />
+    </Key>
+    <Property Name="PayMethodID" Type="int" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PR_MA_EmpSetup">
+    <Key>
+      <PropertyRef Name="EmpSetupID" />
+    </Key>
+    <Property Name="EmpSetupID" Type="int" Nullable="false" />
+    <Property Name="EmpID" Type="int" />
+    <Property Name="BasicPay" Type="decimal" Scale="3" />
+    <Property Name="GrossPay" Type="decimal" Scale="3" />
+    <Property Name="HouseRent" Type="decimal" Scale="3" />
+    <Property Name="Utilities" Type="decimal" Scale="3" />
+    <Property Name="Mobile" Type="decimal" Scale="3" />
+    <Property Name="Fuel" Type="decimal" Scale="3" />
+    <Property Name="IncomeTax" Type="decimal" Scale="3" />
+    <Property Name="Canteen" Type="decimal" Scale="3" />
+    <Property Name="PayMethodID" Type="int" />
+    <Property Name="BankID" Type="int" />
+    <Property Name="BranchID" Type="int" />
+    <Property Name="AccountType" Type="int" />
+    <Property Name="AccountNo" Type="nvarchar" MaxLength="20" />
+    <Property Name="Taxation" Type="bit" />
+    <Property Name="RecommendedBy" Type="int" />
+    <Property Name="RecomendDate" Type="datetime" />
+    <Property Name="ApprovedBy" Type="int" />
+    <Property Name="ApprovedDate" Type="datetime" />
+    <Property Name="RecActive" Type="int" />
+    <Property Name="LastUserID" Type="int" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="int" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="20" />
+    <Property Name="CalcType" Type="int" />
+  </EntityType>
+  <EntityType Name="PR_TR_AdvLoan">
+    <Key>
+      <PropertyRef Name="AdvLoanID" />
+    </Key>
+    <Property Name="AdvLoanID" Type="int" Nullable="false" />
+    <Property Name="EmpID" Type="int" />
+    <Property Name="LoanTypeID" Type="int" />
+    <Property Name="ApplyDate" Type="datetime" />
+    <Property Name="ApplyAmount" Type="int" />
+    <Property Name="ApprovalDate" Type="datetime" />
+    <Property Name="ApprovedAmount" Type="int" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="Reason" Type="nvarchar" MaxLength="255" />
+    <Property Name="TotalInstallments" Type="int" />
+    <Property Name="InstallmentAmount" Type="int" />
+    <Property Name="ApprovedBy" Type="int" />
+    <Property Name="ApprovedDate" Type="nchar" MaxLength="20" />
+    <Property Name="loanstatus" Type="int" />
+    <Property Name="balamount" Type="int" />
+    <Property Name="restartdate" Type="datetime" />
+    <Property Name="LastUserID" Type="int" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="int" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.PR_TR_AdvLoanRecover' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="PR_TR_AdvLoanRecover">
+    <Key>
+      <PropertyRef Name="RecoverID" />
+    </Key>
+    <Property Name="AdvLoanId" Type="int" />
+    <Property Name="RecoverID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="openbal" Type="int" />
+    <Property Name="recoveramt" Type="int" />
+    <Property Name="colosebal" Type="int" />
+    <Property Name="recoverdate" Type="datetime" />
+    <Property Name="EmpID" Type="int" />
+    <Property Name="RecoverType" Type="int" />
+    <Property Name="RecoverRemarks" Type="nvarchar" MaxLength="255" />
+    <Property Name="CalenID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="PR_TR_Allowance">
+    <Key>
+      <PropertyRef Name="AllowanceID" />
+    </Key>
+    <Property Name="AllowanceID" Type="int" Nullable="false" />
+    <Property Name="EmpID" Type="int" />
+    <Property Name="AllowanceDesc" Type="nvarchar" MaxLength="100" />
+    <Property Name="AllowanceDate" Type="datetime" />
+    <Property Name="AllowanceAmount" Type="int" />
+    <Property Name="LastUserID" Type="int" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="int" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="50" />
+    <Property Name="ApprovedBy" Type="int" />
+    <Property Name="ApprovedDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.PR_TR_Arrears' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="PR_TR_Arrears">
+    <Key>
+      <PropertyRef Name="ArrearID" />
+    </Key>
+    <Property Name="ArrearID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Empid" Type="int" />
+    <Property Name="ArrearType" Type="int" />
+    <Property Name="ArrearDate" Type="datetime" />
+    <Property Name="ArrearAmt" Type="decimal" Scale="3" />
+    <Property Name="ArrearDescription" Type="nvarchar(max)" />
+    <Property Name="ArrearRemarks" Type="nvarchar(max)" />
+    <Property Name="ArrearPost" Type="int" />
+    <Property Name="ArrearPostingDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PR_TR_Calendar">
+    <Key>
+      <PropertyRef Name="CalenID" />
+    </Key>
+    <Property Name="CalenID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CalenderDescription" Type="nvarchar" MaxLength="50" />
+    <Property Name="PayrollType" Type="int" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PR_TR_Deducation">
+    <Key>
+      <PropertyRef Name="DeducationID" />
+    </Key>
+    <Property Name="DeducationID" Type="int" Nullable="false" />
+    <Property Name="EmpID" Type="int" />
+    <Property Name="CalenID" Type="bigint" />
+    <Property Name="DeducationDesc" Type="nvarchar" MaxLength="100" />
+    <Property Name="DeducationAmount" Type="int" />
+    <Property Name="LastUserID" Type="int" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="int" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="50" />
+    <Property Name="ApprovedBy" Type="int" />
+    <Property Name="ApprovedDate" Type="datetime" />
+    <Property Name="IsClosed" Type="bit" />
+  </EntityType>
+  <EntityType Name="PR_TR_LateAdjustment">
+    <Key>
+      <PropertyRef Name="TRID" />
+    </Key>
+    <Property Name="TRID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="EmpID" Type="int" />
+    <Property Name="CalenID" Type="bigint" />
+    <Property Name="ActualLate" Type="int" />
+    <Property Name="SystemLate" Type="int" />
+    <Property Name="FinalLate" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.PR_TR_NETPAY' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="PR_TR_NETPAY">
+    <Key>
+      <PropertyRef Name="EmpId" />
+      <PropertyRef Name="DepartmentID" />
+      <PropertyRef Name="DesignationID" />
+    </Key>
+    <Property Name="EmpId" Type="int" Nullable="false" />
+    <Property Name="CalenID" Type="bigint" />
+    <Property Name="DepartmentID" Type="int" Nullable="false" />
+    <Property Name="DesignationID" Type="int" Nullable="false" />
+    <Property Name="payprocessdate" Type="datetime" />
+    <Property Name="basicpay" Type="decimal" Scale="3" />
+    <Property Name="houserent" Type="decimal" Scale="3" />
+    <Property Name="utilities" Type="decimal" Scale="3" />
+    <Property Name="mobile" Type="decimal" Scale="3" />
+    <Property Name="fuel" Type="decimal" Scale="3" />
+    <Property Name="overtimeminutes" Type="decimal" Scale="3" />
+    <Property Name="overtimeamount" Type="decimal" Scale="3" />
+    <Property Name="otherdeductions" Type="decimal" Scale="3" />
+    <Property Name="canteen" Type="decimal" Scale="3" />
+    <Property Name="Vehicle" Type="decimal" Scale="3" />
+    <Property Name="itax" Type="decimal" Scale="3" />
+    <Property Name="advancepayback" Type="decimal" Scale="3" />
+    <Property Name="loanpayback" Type="decimal" Scale="3" />
+    <Property Name="Vehicleloanpayback" Type="decimal" Scale="3" />
+    <Property Name="netpayment" Type="decimal" Scale="3" />
+    <Property Name="workingdays" Type="int" />
+    <Property Name="presentdays" Type="int" />
+    <Property Name="absentdays" Type="int" />
+    <Property Name="latedays" Type="int" />
+    <Property Name="CL" Type="int" />
+    <Property Name="SL" Type="int" />
+    <Property Name="AL" Type="int" />
+    <Property Name="OL" Type="int" />
+    <Property Name="TotalMonthDays" Type="int" />
+    <Property Name="TotalHolyDays" Type="int" />
+    <Property Name="PayMethodID" Type="int" />
+    <Property Name="BankID" Type="int" />
+    <Property Name="BranchID" Type="int" />
+    <Property Name="AccountNo" Type="nvarchar" MaxLength="20" />
+    <Property Name="AGross" Type="decimal" Scale="3" />
+    <Property Name="PaymentDays" Type="int" />
+    <Property Name="CollectArrears" Type="decimal" Scale="3" />
+    <Property Name="PayArrears" Type="decimal" Scale="3" />
+    <Property Name="CollectArrearsDesc" Type="nvarchar(max)" />
+    <Property Name="PayArrearsDesc" Type="nvarchar(max)" />
+    <Property Name="CollectArrearsRem" Type="nvarchar(max)" />
+    <Property Name="PayArrearsRem" Type="nvarchar(max)" />
+    <Property Name="LateDeduction" Type="int" />
+    <Property Name="OtherDeduction" Type="decimal" Scale="2" />
+  </EntityType>
+  <EntityType Name="PR_TR_Salary">
+    <Key>
+      <PropertyRef Name="EmpID" />
+      <PropertyRef Name="AllowanceID" />
+      <PropertyRef Name="CalenID" />
+    </Key>
+    <Property Name="EmpID" Type="int" Nullable="false" />
+    <Property Name="AllowanceID" Type="int" Nullable="false" />
+    <Property Name="CalenID" Type="bigint" Nullable="false" />
+    <Property Name="AllowanceAmountActual" Type="numeric" Scale="3" />
+    <Property Name="AllowanceAmountEarned" Type="numeric" Scale="3" />
+  </EntityType>
+  <EntityType Name="PR_TR_StaffDeductions">
+    <Key>
+      <PropertyRef Name="EmpID" />
+      <PropertyRef Name="DeductMonth" />
+      <PropertyRef Name="DeductYear" />
+      <PropertyRef Name="DeductionID" />
+    </Key>
+    <Property Name="EmpID" Type="int" Nullable="false" />
+    <Property Name="DeductMonth" Type="int" Nullable="false" />
+    <Property Name="DeductYear" Type="int" Nullable="false" />
+    <Property Name="DeductionID" Type="int" Nullable="false" />
+    <Property Name="DeductTrID" Type="int" />
+    <Property Name="DeductAmount" Type="int" />
+    <Property Name="DeductTrDate" Type="datetime" />
+    <Property Name="DeductPost" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.Rdr_Configuration' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Rdr_Configuration">
+    <Key>
+      <PropertyRef Name="ReaderID" />
+    </Key>
+    <Property Name="ReaderID" Type="int" Nullable="false" />
+    <Property Name="ReaderDescription" Type="nvarchar" MaxLength="50" />
+    <Property Name="ReaderConnected" Type="int" />
+    <Property Name="ReaderConnType" Type="int" />
+    <Property Name="ReaderComPort" Type="int" />
+    <Property Name="ReaderBaud" Type="int" />
+    <Property Name="ReaderModPhone" Type="nvarchar" MaxLength="50" />
+    <Property Name="ReaderModInitStr" Type="nvarchar" MaxLength="50" />
+    <Property Name="ReaderHostIP" Type="nvarchar" MaxLength="15" />
+    <Property Name="ReaderEPort" Type="int" />
+    <Property Name="ReaderSno" Type="nvarchar" MaxLength="50" />
+    <Property Name="ReaderUsersCap" Type="int" />
+    <Property Name="ReaderUsersEnr" Type="int" />
+    <Property Name="ReaderTransCap" Type="int" />
+    <Property Name="ReaderUsedFor" Type="int" />
+    <Property Name="ReaderENetConverter" Type="int" />
+    <Property Name="ReaderRStatus" Type="int" />
+    <Property Name="ReaderDevType" Type="int" />
+    <Property Name="LastUserID" Type="int" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="int" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.Rdr_Ext_Config' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Rdr_Ext_Config">
+    <Key>
+      <PropertyRef Name="ReadConfigId" />
+    </Key>
+    <Property Name="ReadConfigId" Type="int" Nullable="false" />
+    <Property Name="Custom_Start" Type="int" />
+    <Property Name="Custom_Length" Type="int" />
+    <Property Name="Time_Start" Type="int" />
+    <Property Name="Time_Length" Type="int" />
+    <Property Name="Extra_Start" Type="int" />
+    <Property Name="Extra_Length" Type="int" />
+    <Property Name="Status_Start" Type="int" />
+    <Property Name="Status_Length" Type="int" />
+    <Property Name="EmpID_Start" Type="int" />
+    <Property Name="EmpID_Length" Type="int" />
+    <Property Name="MachId_Start" Type="int" />
+    <Property Name="MachId_Length" Type="int" />
+    <Property Name="TaCode_Start" Type="int" />
+    <Property Name="TaCode_Length" Type="int" />
+    <Property Name="Year_Start" Type="int" />
+    <Property Name="Year_Length" Type="int" />
+    <Property Name="Month_Start" Type="int" />
+    <Property Name="Month_Length" Type="int" />
+    <Property Name="Day_Start" Type="int" />
+    <Property Name="Day_Length" Type="int" />
+    <Property Name="LastUserID" Type="int" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="int" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.Rdr_Messages' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Rdr_Messages">
+    <Key>
+      <PropertyRef Name="Reader_MsgID" />
+      <PropertyRef Name="Reader_MsgDesc" />
+    </Key>
+    <Property Name="Reader_MsgID" Type="int" Nullable="false" />
+    <Property Name="Reader_MsgDesc" Type="nvarchar" Nullable="false" MaxLength="250" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.Rdr_TxtFile' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Rdr_TxtFile">
+    <Key>
+      <PropertyRef Name="TrNo" />
+    </Key>
+    <Property Name="TrNo" Type="bigint" Nullable="false" />
+    <Property Name="EmpID" Type="int" />
+    <Property Name="TrDate" Type="datetime" />
+    <Property Name="TrTime" Type="nvarchar" MaxLength="20" />
+    <Property Name="NumTime" Type="int" />
+    <Property Name="TrType" Type="int" />
+    <Property Name="TrShiftID" Type="int" />
+    <Property Name="NewTrDate" Type="datetime" />
+    <Property Name="NewTrTime" Type="nvarchar" MaxLength="20" />
+    <Property Name="NewNumTime" Type="int" />
+    <Property Name="NewTrType" Type="int" />
+    <Property Name="NewTrShiftID" Type="int" />
+    <Property Name="MachineID" Type="int" />
+    <Property Name="MachineOrAdditional" Type="int" />
+    <Property Name="isdeleted" Type="int" />
+    <Property Name="IsFinal" Type="int" />
+    <Property Name="isDateChange" Type="int" />
+    <Property Name="IsTimeChange" Type="int" />
+    <Property Name="IsTypeChange" Type="int" />
+    <Property Name="IsShiftChange" Type="int" />
+    <Property Name="LastUserID" Type="int" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="int" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="SalaryBranchDistribute">
+    <Key>
+      <PropertyRef Name="SalaryDistributeId" />
+    </Key>
+    <Property Name="SalaryDistributeId" Type="int" Nullable="false" />
+    <Property Name="BranchID" Type="int" />
+    <Property Name="EmpID" Type="int" />
+    <Property Name="Month" Type="int" />
+    <Property Name="Year" Type="int" />
+    <Property Name="SalaryDistributePers" Type="int" />
+    <Property Name="SalaryDistributeValues" Type="int" />
+    <Property Name="LastUserID" Type="int" />
+    <Property Name="LastEditDateTime" Type="datetime" />
+    <Property Name="Modifications" Type="int" />
+    <Property Name="LastIP" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.Vw_TimeSheetByRow1' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Vw_TimeSheetByRow1">
+    <Key>
+      <PropertyRef Name="EmpFirstName" />
+      <PropertyRef Name="Department" />
+      <PropertyRef Name="DesigDescription" />
+      <PropertyRef Name="CompanyName" />
+      <PropertyRef Name="extra_status" />
+      <PropertyRef Name="BranchID" />
+    </Key>
+    <Property Name="EmpID" Type="int" />
+    <Property Name="TrDate" Type="datetime" />
+    <Property Name="TrTime" Type="nvarchar" MaxLength="5" />
+    <Property Name="RoasterID" Type="int" />
+    <Property Name="WeekNo" Type="int" />
+    <Property Name="ReaderID" Type="int" />
+    <Property Name="ShiftID" Type="int" />
+    <Property Name="ReaderValue" Type="int" />
+    <Property Name="LastPunch_Date" Type="datetime" />
+    <Property Name="LastPunch_Time" Type="nvarchar" MaxLength="5" />
+    <Property Name="EmpFirstName" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="EmpMiddleName" Type="nvarchar" MaxLength="20" />
+    <Property Name="EmpLastName" Type="nvarchar" MaxLength="20" />
+    <Property Name="DeptID" Type="int" />
+    <Property Name="Department" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="DesigID" Type="int" />
+    <Property Name="DesigDescription" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ShiftDescription" Type="nvarchar" MaxLength="50" />
+    <Property Name="ShiftStartTime" Type="nvarchar" MaxLength="5" />
+    <Property Name="ShiftEndTime" Type="nvarchar" MaxLength="5" />
+    <Property Name="ShiftGracePeriod" Type="nvarchar" MaxLength="20" />
+    <Property Name="ShiftProlong" Type="int" />
+    <Property Name="CompanyName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="CompanyLogo" Type="image" />
+    <Property Name="extra_status" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="BranchID" Type="int" Nullable="false" />
+    <Property Name="EmpStatus" Type="int" />
+    <Property Name="Code" Type="nvarchar" MaxLength="1000" />
+    <Property Name="DeptDesc" Type="nvarchar" MaxLength="100" />
+    <Property Name="EmpStatusID" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'ZulWeb.dbo.Vw_TimeSheetByRow2' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Vw_TimeSheetByRow2">
+    <Key>
+      <PropertyRef Name="EmpFirstName" />
+      <PropertyRef Name="Department" />
+      <PropertyRef Name="DesigDescription" />
+      <PropertyRef Name="ShiftDescription" />
+      <PropertyRef Name="ShiftStartTime" />
+      <PropertyRef Name="ShiftEndTime" />
+      <PropertyRef Name="ShiftGracePeriod" />
+      <PropertyRef Name="ShiftProlong" />
+      <PropertyRef Name="CompanyName" />
+      <PropertyRef Name="extra_status" />
+      <PropertyRef Name="BranchID" />
+    </Key>
+    <Property Name="EmpID" Type="int" />
+    <Property Name="TrDate" Type="datetime" />
+    <Property Name="TrTime" Type="nvarchar" MaxLength="5" />
+    <Property Name="RoasterID" Type="int" />
+    <Property Name="WeekNo" Type="int" />
+    <Property Name="ReaderID" Type="int" />
+    <Property Name="ShiftID" Type="int" />
+    <Property Name="ReaderValue" Type="int" />
+    <Property Name="LastPunch_Date" Type="datetime" />
+    <Property Name="LastPunch_Time" Type="nvarchar" MaxLength="5" />
+    <Property Name="EmpFirstName" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="EmpMiddleName" Type="nvarchar" MaxLength="20" />
+    <Property Name="EmpLastName" Type="nvarchar" MaxLength="20" />
+    <Property Name="DeptID" Type="int" />
+    <Property Name="Department" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="DesigID" Type="int" />
+    <Property Name="DesigDescription" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ShiftDescription" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="ShiftStartTime" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="ShiftEndTime" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="ShiftGracePeriod" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="ShiftProlong" Type="int" Nullable="false" />
+    <Property Name="CompanyName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="CompanyLogo" Type="image" />
+    <Property Name="extra_status" Type="varchar" Nullable="false" MaxLength="1" />
+    <Property Name="BranchID" Type="int" Nullable="false" />
+    <Property Name="EmpStatus" Type="int" />
+    <Property Name="Code" Type="nvarchar" MaxLength="1000" />
+    <Property Name="DeptDesc" Type="nvarchar" MaxLength="100" />
+    <Property Name="EmpStatusID" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6013: The table/view 'ZulWeb.dbo.EUS_TR_UserTrail' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="EUS_TR_UserTrail">
+        <Property Name="userid" Type="bigint" />
+        <Property Name="companyid" Type="int" />
+        <Property Name="branchid" Type="int" />
+        <Property Name="logindatetime" Type="datetime" />
+        <Property Name="logoutdatetime" Type="datetime" />
+        <Property Name="ipaddress" Type="nvarchar" MaxLength="20" />
+        <Property Name="formname" Type="nvarchar" MaxLength="100" />
+        <Property Name="formtext" Type="nvarchar" MaxLength="255" />
+        <Property Name="action" Type="nvarchar" MaxLength="50" />
+        <Property Name="actiondatetime" Type="datetime" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'ZulWeb.dbo.LM_MA_LeaveQuota' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="LM_MA_LeaveQuota">
+        <Property Name="QuotaID" Type="int" />
+        <Property Name="EmpID" Type="int" />
+        <Property Name="FiscalYearID" Type="int" />
+        <Property Name="LeaveTypeID" Type="int" />
+        <Property Name="QuotaDays" Type="int" />
+        <Property Name="UsedDays" Type="int" />
+        <Property Name="LastUserID" Type="int" />
+        <Property Name="LastEditDateTime" Type="datetime" />
+        <Property Name="Modifications" Type="int" />
+        <Property Name="LastIP" Type="nvarchar" MaxLength="20" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'ZulWeb.dbo.LM_TR_LeaveApplications' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="LM_TR_LeaveApplications">
+        <Property Name="LeaveAppID" Type="int" />
+        <Property Name="EmpID" Type="int" />
+        <Property Name="LeaveTypeID" Type="int" />
+        <Property Name="LeaveAppDate" Type="datetime" />
+        <Property Name="LeaveStartDate" Type="datetime" />
+        <Property Name="LeaveEndDate" Type="datetime" />
+        <Property Name="LeavePayment" Type="int" />
+        <Property Name="LeaveReason" Type="nvarchar" MaxLength="255" />
+        <Property Name="ApproveID" Type="int" />
+        <Property Name="ApprovedDate" Type="datetime" />
+        <Property Name="LastUserID" Type="int" />
+        <Property Name="LastEditDateTime" Type="datetime" />
+        <Property Name="Modifications" Type="int" />
+        <Property Name="LastIP" Type="nvarchar" MaxLength="20" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'ZulWeb.dbo.Machines' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="Machines">
+        <Property Name="MachineID" Type="int" />
+        <Property Name="IP" Type="nvarchar" MaxLength="20" />
+        <Property Name="Name" Type="nvarchar" MaxLength="50" />
+        <Property Name="Port" Type="int" />
+        <Property Name="MachineType" Type="nvarchar" MaxLength="100" />
+        <Property Name="Status" Type="nvarchar" MaxLength="50" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'ZulWeb.dbo.OracleConfiguration' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="OracleConfiguration">
+        <Property Name="sn" Type="int" />
+        <Property Name="Userid" Type="nvarchar" MaxLength="50" />
+        <Property Name="Password" Type="nvarchar" MaxLength="50" />
+        <Property Name="Database" Type="nvarchar" MaxLength="255" />
+        <Property Name="SID" Type="nvarchar" MaxLength="50" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'ZulWeb.dbo.Rdr_Transactions' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="Rdr_Transactions">
+        <Property Name="EmpID" Type="int" />
+        <Property Name="EmpHPTemplate" Type="nvarchar" MaxLength="50" />
+        <Property Name="TrDate" Type="datetime" />
+        <Property Name="TrTime" Type="nvarchar" MaxLength="20" />
+        <Property Name="RoasterID" Type="int" />
+        <Property Name="WeekNo" Type="int" />
+        <Property Name="ReaderID" Type="int" />
+        <Property Name="ShiftID" Type="int" />
+        <Property Name="ReaderValue" Type="int" />
+        <Property Name="LastPunch_Date" Type="datetime" />
+        <Property Name="LastPunch_Time" Type="nvarchar" MaxLength="20" />
+        <Property Name="TransactionType" Type="int" />
+        <Property Name="NumTrTime" Type="int" />
+        <Property Name="isDateInChange" Type="int" />
+        <Property Name="IsTimeInChange" Type="int" />
+        <Property Name="IsTypeChange" Type="int" />
+        <Property Name="IsShiftChange" Type="int" />
+        <Property Name="MachineOrAdditional" Type="int" />
+        <Property Name="isDateOutChange" Type="int" />
+        <Property Name="IsTimeOutChange" Type="int" />
+      </EntityType>-->
+</Schema>

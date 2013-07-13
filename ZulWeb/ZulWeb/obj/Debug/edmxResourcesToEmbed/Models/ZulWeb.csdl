@@ -1,0 +1,938 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ZulWebModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="ZulWebEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ATT_DD_Shifts" EntityType="ZulWebModel.ATT_DD_Shifts" />
+    <EntitySet Name="ATT_MA_EmployeeDutyRoaster_Detail" EntityType="ZulWebModel.ATT_MA_EmployeeDutyRoaster_Detail" />
+    <EntitySet Name="ATT_MA_EmployeeDutyRoaster_Main" EntityType="ZulWebModel.ATT_MA_EmployeeDutyRoaster_Main" />
+    <EntitySet Name="ATT_MA_Employees" EntityType="ZulWebModel.ATT_MA_Employees" />
+    <EntitySet Name="ATT_MA_EmpShifts_Detail" EntityType="ZulWebModel.ATT_MA_EmpShifts_Detail" />
+    <EntitySet Name="ATT_MA_EmpShifts_Main" EntityType="ZulWebModel.ATT_MA_EmpShifts_Main" />
+    <EntitySet Name="ATT_MA_EmpStatus" EntityType="ZulWebModel.ATT_MA_EmpStatus" />
+    <EntitySet Name="ATT_TR_PunchMissAndDelay" EntityType="ZulWebModel.ATT_TR_PunchMissAndDelay" />
+    <EntitySet Name="EUS_DD_Cities" EntityType="ZulWebModel.EUS_DD_Cities" />
+    <EntitySet Name="EUS_DD_Countries" EntityType="ZulWebModel.EUS_DD_Countries" />
+    <EntitySet Name="EUS_DD_Departments" EntityType="ZulWebModel.EUS_DD_Departments" />
+    <EntitySet Name="EUS_DD_Designations" EntityType="ZulWebModel.EUS_DD_Designations" />
+    <EntitySet Name="EUS_DD_ERPModules" EntityType="ZulWebModel.EUS_DD_ERPModules" />
+    <EntitySet Name="EUS_DD_JobTypes" EntityType="ZulWebModel.EUS_DD_JobTypes" />
+    <EntitySet Name="EUS_DD_Privileges" EntityType="ZulWebModel.EUS_DD_Privileges" />
+    <EntitySet Name="EUS_DD_Religion" EntityType="ZulWebModel.EUS_DD_Religion" />
+    <EntitySet Name="EUS_DD_UserTypes" EntityType="ZulWebModel.EUS_DD_UserTypes" />
+    <EntitySet Name="EUS_MA_BP_Privilege" EntityType="ZulWebModel.EUS_MA_BP_Privilege" />
+    <EntitySet Name="EUS_MA_Branches" EntityType="ZulWebModel.EUS_MA_Branches" />
+    <EntitySet Name="EUS_MA_BusinessProcesses" EntityType="ZulWebModel.EUS_MA_BusinessProcesses" />
+    <EntitySet Name="EUS_MA_Company" EntityType="ZulWebModel.EUS_MA_Company" />
+    <EntitySet Name="EUS_MA_Configuration" EntityType="ZulWebModel.EUS_MA_Configuration" />
+    <EntitySet Name="EUS_MA_Users" EntityType="ZulWebModel.EUS_MA_Users" />
+    <EntitySet Name="EUS_TR_UserPrivileges" EntityType="ZulWebModel.EUS_TR_UserPrivileges" />
+    <EntitySet Name="LM_DD_LeaveTypes" EntityType="ZulWebModel.LM_DD_LeaveTypes" />
+    <EntitySet Name="LM_MA_Calendar" EntityType="ZulWebModel.LM_MA_Calendar" />
+    <EntitySet Name="LM_MA_FiscalYear" EntityType="ZulWebModel.LM_MA_FiscalYear" />
+    <EntitySet Name="PR_DD_Allowance" EntityType="ZulWebModel.PR_DD_Allowance" />
+    <EntitySet Name="PR_DD_Banks" EntityType="ZulWebModel.PR_DD_Banks" />
+    <EntitySet Name="PR_DD_Branches" EntityType="ZulWebModel.PR_DD_Branches" />
+    <EntitySet Name="PR_DD_LoanType" EntityType="ZulWebModel.PR_DD_LoanType" />
+    <EntitySet Name="PR_DD_PayMethod" EntityType="ZulWebModel.PR_DD_PayMethod" />
+    <EntitySet Name="PR_MA_EmpSetup" EntityType="ZulWebModel.PR_MA_EmpSetup" />
+    <EntitySet Name="PR_TR_AdvLoan" EntityType="ZulWebModel.PR_TR_AdvLoan" />
+    <EntitySet Name="PR_TR_AdvLoanRecover" EntityType="ZulWebModel.PR_TR_AdvLoanRecover" />
+    <EntitySet Name="PR_TR_Allowance" EntityType="ZulWebModel.PR_TR_Allowance" />
+    <EntitySet Name="PR_TR_Arrears" EntityType="ZulWebModel.PR_TR_Arrears" />
+    <EntitySet Name="PR_TR_Calendar" EntityType="ZulWebModel.PR_TR_Calendar" />
+    <EntitySet Name="PR_TR_Deducation" EntityType="ZulWebModel.PR_TR_Deducation" />
+    <EntitySet Name="PR_TR_LateAdjustment" EntityType="ZulWebModel.PR_TR_LateAdjustment" />
+    <EntitySet Name="PR_TR_NETPAY" EntityType="ZulWebModel.PR_TR_NETPAY" />
+    <EntitySet Name="PR_TR_Salary" EntityType="ZulWebModel.PR_TR_Salary" />
+    <EntitySet Name="PR_TR_StaffDeductions" EntityType="ZulWebModel.PR_TR_StaffDeductions" />
+    <EntitySet Name="Rdr_Configuration" EntityType="ZulWebModel.Rdr_Configuration" />
+    <EntitySet Name="Rdr_Ext_Config" EntityType="ZulWebModel.Rdr_Ext_Config" />
+    <EntitySet Name="Rdr_Messages" EntityType="ZulWebModel.Rdr_Messages" />
+    <EntitySet Name="Rdr_TxtFile" EntityType="ZulWebModel.Rdr_TxtFile" />
+    <EntitySet Name="SalaryBranchDistributes" EntityType="ZulWebModel.SalaryBranchDistribute" />
+    <EntitySet Name="Vw_TimeSheetByRow1" EntityType="ZulWebModel.Vw_TimeSheetByRow1" />
+    <EntitySet Name="Vw_TimeSheetByRow2" EntityType="ZulWebModel.Vw_TimeSheetByRow2" />
+  </EntityContainer>
+  <EntityType Name="ATT_DD_Shifts">
+    <Key>
+      <PropertyRef Name="ShiftId" />
+    </Key>
+    <Property Name="ShiftId" Type="Int32" Nullable="false" />
+    <Property Name="ShiftDescription" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ShiftEntryStartTime" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="ShiftStartTime" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="ShiftEndTime" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="ShiftGracePeriod" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="ShiftProlong" Type="Int32" />
+    <Property Name="ShiftStatus" Type="Int32" />
+    <Property Name="LastUserID" Type="Int64" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int64" />
+    <Property Name="LastIP" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ATT_MA_EmployeeDutyRoaster_Detail">
+    <Key>
+      <PropertyRef Name="RoasterID" />
+    </Key>
+    <Property Name="RoasterID" Type="Int32" Nullable="false" />
+    <Property Name="WeekNo" Type="Int32" />
+    <Property Name="Mon_Shift" Type="Int32" />
+    <Property Name="Tue_Shift" Type="Int32" />
+    <Property Name="Wed_Shift" Type="Int32" />
+    <Property Name="Thu_Shift" Type="Int32" />
+    <Property Name="Fri_Shift" Type="Int32" />
+    <Property Name="Sat_Shift" Type="Int32" />
+    <Property Name="Sun_Shift" Type="Int32" />
+  </EntityType>
+  <EntityType Name="ATT_MA_EmployeeDutyRoaster_Main">
+    <Key>
+      <PropertyRef Name="RoasterID" />
+      <PropertyRef Name="EmpID" />
+    </Key>
+    <Property Name="RoasterID" Type="Int32" Nullable="false" />
+    <Property Name="EmpID" Type="Int32" Nullable="false" />
+    <Property Name="EmpRoasterStatus" Type="Int32" />
+    <Property Name="EmpRoasterApplyDate" Type="DateTime" />
+    <Property Name="LastUserID" Type="Int32" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int32" />
+    <Property Name="LastIP" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ATT_MA_Employees">
+    <Key>
+      <PropertyRef Name="EmpID" />
+      <PropertyRef Name="EmpFirstName" />
+    </Key>
+    <Property Name="EmpID" Type="Int32" Nullable="false" />
+    <Property Name="EmpFirstName" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="EmpMiddleName" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="EmpLastName" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="EmpFatherName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="EmpGender" Type="Int32" />
+    <Property Name="EmpSalutation" Type="Int32" />
+    <Property Name="EmpDOB" Type="DateTime" />
+    <Property Name="EmpAddress" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="CountryCityID" Type="Int32" />
+    <Property Name="EmpJoinDate" Type="DateTime" />
+    <Property Name="EmpPhone" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="EmpMobile" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="EmpEmail" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ReligionID" Type="Int32" />
+    <Property Name="EmpMaritalStatus" Type="Int32" />
+    <Property Name="EmpCNIC" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="BranchID" Type="Int32" />
+    <Property Name="DeptID" Type="Int32" />
+    <Property Name="DesigID" Type="Int32" />
+    <Property Name="EmpConfirmationDate" Type="DateTime" />
+    <Property Name="EmpLeftDate" Type="DateTime" />
+    <Property Name="EmpStatus" Type="Int32" />
+    <Property Name="LastUserID" Type="Int32" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int32" />
+    <Property Name="LastIP" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="EmpPic" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="LeftReason" Type="Int32" />
+    <Property Name="EmpHPTemplate" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Code" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="OTAllowed" Type="Int32" />
+    <Property Name="LateAllowed" Type="Int32" />
+    <Property Name="EmpStatusID" Type="Int32" />
+    <Property Name="OT_From" Type="Int32" />
+    <Property Name="OT_To" Type="Int32" />
+  </EntityType>
+  <EntityType Name="ATT_MA_EmpShifts_Detail">
+    <Key>
+      <PropertyRef Name="EmpShiftID" />
+      <PropertyRef Name="ShiftID" />
+    </Key>
+    <Property Name="EmpShiftID" Type="Int32" Nullable="false" />
+    <Property Name="ShiftID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ATT_MA_EmpShifts_Main">
+    <Key>
+      <PropertyRef Name="EmpShiftID" />
+      <PropertyRef Name="EmpID" />
+      <PropertyRef Name="EmpShiftStatus" />
+    </Key>
+    <Property Name="EmpShiftID" Type="Int32" Nullable="false" />
+    <Property Name="EmpID" Type="Int32" Nullable="false" />
+    <Property Name="EmpShiftStatus" Type="Int32" Nullable="false" />
+    <Property Name="EmpShiftApplyDate" Type="DateTime" />
+    <Property Name="LastUserID" Type="Int32" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int32" />
+    <Property Name="LastIP" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ATT_MA_EmpStatus">
+    <Key>
+      <PropertyRef Name="EmpStatusID" />
+    </Key>
+    <Property Name="EmpStatusID" Type="Int32" Nullable="false" />
+    <Property Name="EmpStatusDesc" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="EmpStatusFlag" Type="Int32" />
+    <Property Name="LasrUserID" Type="Int32" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int32" />
+    <Property Name="LastIP" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ATT_TR_PunchMissAndDelay">
+    <Key>
+      <PropertyRef Name="PunchID" />
+    </Key>
+    <Property Name="PunchID" Type="Int32" Nullable="false" />
+    <Property Name="EmpID" Type="Int32" />
+    <Property Name="DateOfMiss" Type="DateTime" />
+    <Property Name="Reason" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="EntryTime" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="EntryType" Type="Int32" />
+    <Property Name="ApproveID" Type="Int32" />
+    <Property Name="ApprovedDate" Type="DateTime" />
+    <Property Name="LastUserID" Type="Int32" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int32" />
+    <Property Name="LastIP" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="DateOfMissOut" Type="DateTime" />
+    <Property Name="EntryTimeOUT" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Posted" Type="Int32" />
+  </EntityType>
+  <EntityType Name="EUS_DD_Cities">
+    <Key>
+      <PropertyRef Name="CountryID" />
+      <PropertyRef Name="CountryCityID" />
+    </Key>
+    <Property Name="CountryID" Type="Int32" Nullable="false" />
+    <Property Name="CountryCityID" Type="Int64" Nullable="false" />
+    <Property Name="CityDescription" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="LastUserID" Type="Int64" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int64" />
+    <Property Name="LastIP" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="EUS_DD_Countries">
+    <Key>
+      <PropertyRef Name="CountryID" />
+    </Key>
+    <Property Name="CountryID" Type="Int32" Nullable="false" />
+    <Property Name="CountryDescription" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="LastUserID" Type="Int64" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int64" />
+    <Property Name="LastIP" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="EUS_DD_Departments">
+    <Key>
+      <PropertyRef Name="DeptID" />
+      <PropertyRef Name="Department" />
+    </Key>
+    <Property Name="DeptID" Type="Int32" Nullable="false" />
+    <Property Name="Department" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="DeptStatus" Type="Int32" />
+    <Property Name="LastUserID" Type="Int32" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int32" />
+    <Property Name="LastIP" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="DepartmentLevel" Type="Int32" />
+    <Property Name="DepartmentParent" Type="Int32" />
+    <Property Name="DepartmentType" Type="Int32" />
+    <Property Name="DeptCode" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="DeptDesc" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="EUS_DD_Designations">
+    <Key>
+      <PropertyRef Name="DesigID" />
+      <PropertyRef Name="DesigDescription" />
+    </Key>
+    <Property Name="DesigID" Type="Int32" Nullable="false" />
+    <Property Name="DesigDescription" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="DesigStatus" Type="Int32" />
+    <Property Name="LastUserID" Type="Int32" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int32" />
+    <Property Name="LastIP" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="EUS_DD_ERPModules">
+    <Key>
+      <PropertyRef Name="ERPModuleID" />
+      <PropertyRef Name="ModuleName" />
+    </Key>
+    <Property Name="ERPModuleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ModuleName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ModuleNameShort" Type="String" MaxLength="3" Unicode="true" FixedLength="false" />
+    <Property Name="ModuleStatus" Type="Int32" />
+  </EntityType>
+  <EntityType Name="EUS_DD_JobTypes">
+    <Key>
+      <PropertyRef Name="JobID" />
+      <PropertyRef Name="JobDescription" />
+    </Key>
+    <Property Name="JobID" Type="Int32" Nullable="false" />
+    <Property Name="JobDescription" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="JobStatus" Type="Int32" />
+    <Property Name="LastUserID" Type="Int32" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int32" />
+    <Property Name="LastIP" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="EUS_DD_Privileges">
+    <Key>
+      <PropertyRef Name="PrivilegeID" />
+      <PropertyRef Name="PrivilegeName" />
+    </Key>
+    <Property Name="PrivilegeID" Type="Int32" Nullable="false" />
+    <Property Name="PrivilegeName" Type="String" Nullable="false" MaxLength="15" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="EUS_DD_Religion">
+    <Key>
+      <PropertyRef Name="ReligionID" />
+      <PropertyRef Name="ReligionDesc" />
+    </Key>
+    <Property Name="ReligionID" Type="Int32" Nullable="false" />
+    <Property Name="ReligionDesc" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ReligionStatus" Type="Int32" />
+    <Property Name="LastUserID" Type="Int32" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int32" />
+    <Property Name="LastIP" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="EUS_DD_UserTypes">
+    <Key>
+      <PropertyRef Name="UserTypeID" />
+      <PropertyRef Name="UserTypeName" />
+    </Key>
+    <Property Name="UserTypeID" Type="Int32" Nullable="false" />
+    <Property Name="UserTypeName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="EUS_MA_BP_Privilege">
+    <Key>
+      <PropertyRef Name="BusinessProcessID" />
+      <PropertyRef Name="PrivilegeID" />
+    </Key>
+    <Property Name="BusinessProcessID" Type="Int32" Nullable="false" />
+    <Property Name="PrivilegeID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EUS_MA_Branches">
+    <Key>
+      <PropertyRef Name="BranchID" />
+      <PropertyRef Name="BranchName" />
+    </Key>
+    <Property Name="CompanyID" Type="Int32" />
+    <Property Name="BranchID" Type="Int32" Nullable="false" />
+    <Property Name="BranchName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="BranchAddress" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="BranchContactPerson" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CountryCityID" Type="Int64" />
+    <Property Name="BranchPhone" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BranchFax" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BranchEmail" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BranchURL" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BranchStatus" Type="Int32" />
+    <Property Name="LastUserID" Type="Int64" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int64" />
+    <Property Name="LastIP" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="EUS_MA_BusinessProcesses">
+    <Key>
+      <PropertyRef Name="BusinessProcessID" />
+      <PropertyRef Name="ERPModuleID" />
+      <PropertyRef Name="BusinessProcessName" />
+    </Key>
+    <Property Name="BusinessProcessID" Type="Int32" Nullable="false" />
+    <Property Name="ERPModuleID" Type="Int32" Nullable="false" />
+    <Property Name="BusinessProcessName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BusinessProcessNameShort" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="BusinessProcessLevel" Type="Int32" />
+    <Property Name="BusinessProcessParentID" Type="Int32" />
+    <Property Name="BusinessProcessType" Type="Int32" />
+    <Property Name="BusinessProcessFormName" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="BusinessProcessParameterValue" Type="Int32" />
+    <Property Name="BusinessProcessStatus" Type="Int32" />
+  </EntityType>
+  <EntityType Name="EUS_MA_Company">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+      <PropertyRef Name="CompanyName" />
+    </Key>
+    <Property Name="CompanyID" Type="Int32" Nullable="false" />
+    <Property Name="CompanyName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyContactPerson" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyAddress" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="CountryCityID" Type="Int64" />
+    <Property Name="CompanyPhone" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyFax" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyEmail" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyURL" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyLogo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="CompanyStatus" Type="Int32" />
+    <Property Name="LastUserID" Type="Int64" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int64" />
+    <Property Name="LastIP" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="EUS_MA_Configuration">
+    <Key>
+      <PropertyRef Name="ConfigID" />
+      <PropertyRef Name="CashDrawerID" />
+    </Key>
+    <Property Name="ConfigID" Type="Int32" Nullable="false" />
+    <Property Name="ReceiptPrinter" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="CashDrawerID" Type="Int32" Nullable="false" />
+    <Property Name="BranchID" Type="Int32" />
+    <Property Name="ReportPrinter" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="OnePrinterForAllKitchen" Type="Int32" />
+    <Property Name="LastUserID" Type="Int32" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int32" />
+    <Property Name="LastIP" Type="String" MaxLength="25" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="EUS_MA_Users">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="CountryCityID" />
+      <PropertyRef Name="BranchID" />
+      <PropertyRef Name="CompanyID" />
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="UserPassword" />
+      <PropertyRef Name="CreationDate" />
+      <PropertyRef Name="UserStatus" />
+    </Key>
+    <Property Name="UserID" Type="Int64" Nullable="false" />
+    <Property Name="CountryCityID" Type="Int64" Nullable="false" />
+    <Property Name="BranchID" Type="Int32" Nullable="false" />
+    <Property Name="CompanyID" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="UserPassword" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" />
+    <Property Name="UserStatus" Type="Int32" Nullable="false" />
+    <Property Name="ThemeID" Type="Int32" />
+    <Property Name="ThemePath" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="UserTypeID" Type="Int32" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int32" />
+    <Property Name="LastIP" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="EUS_TR_UserPrivileges">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="ERPModuleID" />
+      <PropertyRef Name="BusinessProcessID" />
+      <PropertyRef Name="PrivilegeID" />
+      <PropertyRef Name="CreationDate" />
+    </Key>
+    <Property Name="UserID" Type="Int64" Nullable="false" />
+    <Property Name="ERPModuleID" Type="Int32" Nullable="false" />
+    <Property Name="BusinessProcessID" Type="Int32" Nullable="false" />
+    <Property Name="PrivilegeID" Type="Int32" Nullable="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LM_DD_LeaveTypes">
+    <Key>
+      <PropertyRef Name="LeaveTypeID" />
+      <PropertyRef Name="LeaveTypeDesc" />
+    </Key>
+    <Property Name="LeaveTypeID" Type="Int32" Nullable="false" />
+    <Property Name="LeaveTypeDesc" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LeaveTotal" Type="Int32" />
+    <Property Name="LeaveColor" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LeaveEncashable" Type="Int32" />
+    <Property Name="LeaveEncashableMax" Type="Int32" />
+    <Property Name="LeaveForward" Type="Int32" />
+    <Property Name="LeaveForwardMax" Type="Int32" />
+    <Property Name="LeaveHoldMax" Type="Int32" />
+    <Property Name="LeaveTypeStatus" Type="Int32" />
+    <Property Name="LastUserID" Type="Int32" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int32" />
+    <Property Name="LastIP" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="LM_MA_Calendar">
+    <Key>
+      <PropertyRef Name="CalendarID" />
+      <PropertyRef Name="CalendarDescription" />
+    </Key>
+    <Property Name="CalendarID" Type="Int32" Nullable="false" />
+    <Property Name="CalendarDescription" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CalendarDate" Type="DateTime" />
+    <Property Name="LastUserID" Type="Int32" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int32" />
+    <Property Name="LastIP" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="LM_MA_FiscalYear">
+    <Key>
+      <PropertyRef Name="FiscalYearID" />
+      <PropertyRef Name="FYStart" />
+      <PropertyRef Name="FYEnd" />
+    </Key>
+    <Property Name="FiscalYearID" Type="Int32" Nullable="false" />
+    <Property Name="FYStart" Type="DateTime" Nullable="false" />
+    <Property Name="FYEnd" Type="DateTime" Nullable="false" />
+    <Property Name="FYStatus" Type="Int32" />
+    <Property Name="LastUserID" Type="Int32" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int32" />
+    <Property Name="LastIP" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="PR_DD_Allowance">
+    <Key>
+      <PropertyRef Name="AllowanceID" />
+    </Key>
+    <Property Name="AllowanceID" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="LocationID" Type="Int32" />
+    <Property Name="CityID" Type="Int32" />
+    <Property Name="OfficeID" Type="Int32" />
+    <Property Name="AllowPercentage" Type="Int32" />
+    <Property Name="Tax" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="PR_DD_Banks">
+    <Key>
+      <PropertyRef Name="BankID" />
+    </Key>
+    <Property Name="BankID" Type="Int32" Nullable="false" />
+    <Property Name="BankDesc" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="ShortName" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="PR_DD_Branches">
+    <Key>
+      <PropertyRef Name="BankBranchID" />
+    </Key>
+    <Property Name="BankBranchID" Type="Int32" Nullable="false" />
+    <Property Name="BankID" Type="Int32" />
+    <Property Name="BranchDescription" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Address" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CountryCidyID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="PR_DD_LoanType">
+    <Key>
+      <PropertyRef Name="LoanTypeID" />
+    </Key>
+    <Property Name="LoanTypeID" Type="Int32" Nullable="false" />
+    <Property Name="LoanTypeDesc" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Loan_Adv" Type="Int32" />
+    <Property Name="LoanTypeStatus" Type="Int32" />
+    <Property Name="LastUserID" Type="Int32" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int32" />
+    <Property Name="LastIP" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="PR_DD_PayMethod">
+    <Key>
+      <PropertyRef Name="PayMethodID" />
+    </Key>
+    <Property Name="PayMethodID" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="PR_MA_EmpSetup">
+    <Key>
+      <PropertyRef Name="EmpSetupID" />
+    </Key>
+    <Property Name="EmpSetupID" Type="Int32" Nullable="false" />
+    <Property Name="EmpID" Type="Int32" />
+    <Property Name="BasicPay" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="GrossPay" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="HouseRent" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="Utilities" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="Mobile" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="Fuel" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="IncomeTax" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="Canteen" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="PayMethodID" Type="Int32" />
+    <Property Name="BankID" Type="Int32" />
+    <Property Name="BranchID" Type="Int32" />
+    <Property Name="AccountType" Type="Int32" />
+    <Property Name="AccountNo" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Taxation" Type="Boolean" />
+    <Property Name="RecommendedBy" Type="Int32" />
+    <Property Name="RecomendDate" Type="DateTime" />
+    <Property Name="ApprovedBy" Type="Int32" />
+    <Property Name="ApprovedDate" Type="DateTime" />
+    <Property Name="RecActive" Type="Int32" />
+    <Property Name="LastUserID" Type="Int32" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int32" />
+    <Property Name="LastIP" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="CalcType" Type="Int32" />
+  </EntityType>
+  <EntityType Name="PR_TR_AdvLoan">
+    <Key>
+      <PropertyRef Name="AdvLoanID" />
+    </Key>
+    <Property Name="AdvLoanID" Type="Int32" Nullable="false" />
+    <Property Name="EmpID" Type="Int32" />
+    <Property Name="LoanTypeID" Type="Int32" />
+    <Property Name="ApplyDate" Type="DateTime" />
+    <Property Name="ApplyAmount" Type="Int32" />
+    <Property Name="ApprovalDate" Type="DateTime" />
+    <Property Name="ApprovedAmount" Type="Int32" />
+    <Property Name="StartDate" Type="DateTime" />
+    <Property Name="Reason" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="TotalInstallments" Type="Int32" />
+    <Property Name="InstallmentAmount" Type="Int32" />
+    <Property Name="ApprovedBy" Type="Int32" />
+    <Property Name="ApprovedDate" Type="String" MaxLength="20" Unicode="true" FixedLength="true" />
+    <Property Name="loanstatus" Type="Int32" />
+    <Property Name="balamount" Type="Int32" />
+    <Property Name="restartdate" Type="DateTime" />
+    <Property Name="LastUserID" Type="Int32" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int32" />
+    <Property Name="LastIP" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="PR_TR_AdvLoanRecover">
+    <Key>
+      <PropertyRef Name="RecoverID" />
+    </Key>
+    <Property Name="AdvLoanId" Type="Int32" />
+    <Property Name="RecoverID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="openbal" Type="Int32" />
+    <Property Name="recoveramt" Type="Int32" />
+    <Property Name="colosebal" Type="Int32" />
+    <Property Name="recoverdate" Type="DateTime" />
+    <Property Name="EmpID" Type="Int32" />
+    <Property Name="RecoverType" Type="Int32" />
+    <Property Name="RecoverRemarks" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="CalenID" Type="Int64" />
+  </EntityType>
+  <EntityType Name="PR_TR_Allowance">
+    <Key>
+      <PropertyRef Name="AllowanceID" />
+    </Key>
+    <Property Name="AllowanceID" Type="Int32" Nullable="false" />
+    <Property Name="EmpID" Type="Int32" />
+    <Property Name="AllowanceDesc" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="AllowanceDate" Type="DateTime" />
+    <Property Name="AllowanceAmount" Type="Int32" />
+    <Property Name="LastUserID" Type="Int32" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int32" />
+    <Property Name="LastIP" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ApprovedBy" Type="Int32" />
+    <Property Name="ApprovedDate" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="PR_TR_Arrears">
+    <Key>
+      <PropertyRef Name="ArrearID" />
+    </Key>
+    <Property Name="ArrearID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Empid" Type="Int32" />
+    <Property Name="ArrearType" Type="Int32" />
+    <Property Name="ArrearDate" Type="DateTime" />
+    <Property Name="ArrearAmt" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="ArrearDescription" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ArrearRemarks" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ArrearPost" Type="Int32" />
+    <Property Name="ArrearPostingDate" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="PR_TR_Calendar">
+    <Key>
+      <PropertyRef Name="CalenID" />
+    </Key>
+    <Property Name="CalenID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CalenderDescription" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PayrollType" Type="Int32" />
+    <Property Name="StartDate" Type="DateTime" />
+    <Property Name="EndDate" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="PR_TR_Deducation">
+    <Key>
+      <PropertyRef Name="DeducationID" />
+    </Key>
+    <Property Name="DeducationID" Type="Int32" Nullable="false" />
+    <Property Name="EmpID" Type="Int32" />
+    <Property Name="CalenID" Type="Int64" />
+    <Property Name="DeducationDesc" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="DeducationAmount" Type="Int32" />
+    <Property Name="LastUserID" Type="Int32" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int32" />
+    <Property Name="LastIP" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ApprovedBy" Type="Int32" />
+    <Property Name="ApprovedDate" Type="DateTime" />
+    <Property Name="IsClosed" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="PR_TR_LateAdjustment">
+    <Key>
+      <PropertyRef Name="TRID" />
+    </Key>
+    <Property Name="TRID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmpID" Type="Int32" />
+    <Property Name="CalenID" Type="Int64" />
+    <Property Name="ActualLate" Type="Int32" />
+    <Property Name="SystemLate" Type="Int32" />
+    <Property Name="FinalLate" Type="Int32" />
+  </EntityType>
+  <EntityType Name="PR_TR_NETPAY">
+    <Key>
+      <PropertyRef Name="EmpId" />
+      <PropertyRef Name="DepartmentID" />
+      <PropertyRef Name="DesignationID" />
+    </Key>
+    <Property Name="EmpId" Type="Int32" Nullable="false" />
+    <Property Name="CalenID" Type="Int64" />
+    <Property Name="DepartmentID" Type="Int32" Nullable="false" />
+    <Property Name="DesignationID" Type="Int32" Nullable="false" />
+    <Property Name="payprocessdate" Type="DateTime" />
+    <Property Name="basicpay" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="houserent" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="utilities" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="mobile" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="fuel" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="overtimeminutes" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="overtimeamount" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="otherdeductions" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="canteen" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="Vehicle" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="itax" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="advancepayback" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="loanpayback" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="Vehicleloanpayback" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="netpayment" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="workingdays" Type="Int32" />
+    <Property Name="presentdays" Type="Int32" />
+    <Property Name="absentdays" Type="Int32" />
+    <Property Name="latedays" Type="Int32" />
+    <Property Name="CL" Type="Int32" />
+    <Property Name="SL" Type="Int32" />
+    <Property Name="AL" Type="Int32" />
+    <Property Name="OL" Type="Int32" />
+    <Property Name="TotalMonthDays" Type="Int32" />
+    <Property Name="TotalHolyDays" Type="Int32" />
+    <Property Name="PayMethodID" Type="Int32" />
+    <Property Name="BankID" Type="Int32" />
+    <Property Name="BranchID" Type="Int32" />
+    <Property Name="AccountNo" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="AGross" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="PaymentDays" Type="Int32" />
+    <Property Name="CollectArrears" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="PayArrears" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="CollectArrearsDesc" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PayArrearsDesc" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="CollectArrearsRem" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="PayArrearsRem" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="LateDeduction" Type="Int32" />
+    <Property Name="OtherDeduction" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="PR_TR_Salary">
+    <Key>
+      <PropertyRef Name="EmpID" />
+      <PropertyRef Name="AllowanceID" />
+      <PropertyRef Name="CalenID" />
+    </Key>
+    <Property Name="EmpID" Type="Int32" Nullable="false" />
+    <Property Name="AllowanceID" Type="Int32" Nullable="false" />
+    <Property Name="CalenID" Type="Int64" Nullable="false" />
+    <Property Name="AllowanceAmountActual" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="AllowanceAmountEarned" Type="Decimal" Precision="18" Scale="3" />
+  </EntityType>
+  <EntityType Name="PR_TR_StaffDeductions">
+    <Key>
+      <PropertyRef Name="EmpID" />
+      <PropertyRef Name="DeductMonth" />
+      <PropertyRef Name="DeductYear" />
+      <PropertyRef Name="DeductionID" />
+    </Key>
+    <Property Name="EmpID" Type="Int32" Nullable="false" />
+    <Property Name="DeductMonth" Type="Int32" Nullable="false" />
+    <Property Name="DeductYear" Type="Int32" Nullable="false" />
+    <Property Name="DeductionID" Type="Int32" Nullable="false" />
+    <Property Name="DeductTrID" Type="Int32" />
+    <Property Name="DeductAmount" Type="Int32" />
+    <Property Name="DeductTrDate" Type="DateTime" />
+    <Property Name="DeductPost" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Rdr_Configuration">
+    <Key>
+      <PropertyRef Name="ReaderID" />
+    </Key>
+    <Property Name="ReaderID" Type="Int32" Nullable="false" />
+    <Property Name="ReaderDescription" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ReaderConnected" Type="Int32" />
+    <Property Name="ReaderConnType" Type="Int32" />
+    <Property Name="ReaderComPort" Type="Int32" />
+    <Property Name="ReaderBaud" Type="Int32" />
+    <Property Name="ReaderModPhone" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ReaderModInitStr" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ReaderHostIP" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="ReaderEPort" Type="Int32" />
+    <Property Name="ReaderSno" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ReaderUsersCap" Type="Int32" />
+    <Property Name="ReaderUsersEnr" Type="Int32" />
+    <Property Name="ReaderTransCap" Type="Int32" />
+    <Property Name="ReaderUsedFor" Type="Int32" />
+    <Property Name="ReaderENetConverter" Type="Int32" />
+    <Property Name="ReaderRStatus" Type="Int32" />
+    <Property Name="ReaderDevType" Type="Int32" />
+    <Property Name="LastUserID" Type="Int32" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int32" />
+    <Property Name="LastIP" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Rdr_Ext_Config">
+    <Key>
+      <PropertyRef Name="ReadConfigId" />
+    </Key>
+    <Property Name="ReadConfigId" Type="Int32" Nullable="false" />
+    <Property Name="Custom_Start" Type="Int32" />
+    <Property Name="Custom_Length" Type="Int32" />
+    <Property Name="Time_Start" Type="Int32" />
+    <Property Name="Time_Length" Type="Int32" />
+    <Property Name="Extra_Start" Type="Int32" />
+    <Property Name="Extra_Length" Type="Int32" />
+    <Property Name="Status_Start" Type="Int32" />
+    <Property Name="Status_Length" Type="Int32" />
+    <Property Name="EmpID_Start" Type="Int32" />
+    <Property Name="EmpID_Length" Type="Int32" />
+    <Property Name="MachId_Start" Type="Int32" />
+    <Property Name="MachId_Length" Type="Int32" />
+    <Property Name="TaCode_Start" Type="Int32" />
+    <Property Name="TaCode_Length" Type="Int32" />
+    <Property Name="Year_Start" Type="Int32" />
+    <Property Name="Year_Length" Type="Int32" />
+    <Property Name="Month_Start" Type="Int32" />
+    <Property Name="Month_Length" Type="Int32" />
+    <Property Name="Day_Start" Type="Int32" />
+    <Property Name="Day_Length" Type="Int32" />
+    <Property Name="LastUserID" Type="Int32" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int32" />
+    <Property Name="LastIP" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Rdr_Messages">
+    <Key>
+      <PropertyRef Name="Reader_MsgID" />
+      <PropertyRef Name="Reader_MsgDesc" />
+    </Key>
+    <Property Name="Reader_MsgID" Type="Int32" Nullable="false" />
+    <Property Name="Reader_MsgDesc" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Rdr_TxtFile">
+    <Key>
+      <PropertyRef Name="TrNo" />
+    </Key>
+    <Property Name="TrNo" Type="Int64" Nullable="false" />
+    <Property Name="EmpID" Type="Int32" />
+    <Property Name="TrDate" Type="DateTime" />
+    <Property Name="TrTime" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="NumTime" Type="Int32" />
+    <Property Name="TrType" Type="Int32" />
+    <Property Name="TrShiftID" Type="Int32" />
+    <Property Name="NewTrDate" Type="DateTime" />
+    <Property Name="NewTrTime" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="NewNumTime" Type="Int32" />
+    <Property Name="NewTrType" Type="Int32" />
+    <Property Name="NewTrShiftID" Type="Int32" />
+    <Property Name="MachineID" Type="Int32" />
+    <Property Name="MachineOrAdditional" Type="Int32" />
+    <Property Name="isdeleted" Type="Int32" />
+    <Property Name="IsFinal" Type="Int32" />
+    <Property Name="isDateChange" Type="Int32" />
+    <Property Name="IsTimeChange" Type="Int32" />
+    <Property Name="IsTypeChange" Type="Int32" />
+    <Property Name="IsShiftChange" Type="Int32" />
+    <Property Name="LastUserID" Type="Int32" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int32" />
+    <Property Name="LastIP" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SalaryBranchDistribute">
+    <Key>
+      <PropertyRef Name="SalaryDistributeId" />
+    </Key>
+    <Property Name="SalaryDistributeId" Type="Int32" Nullable="false" />
+    <Property Name="BranchID" Type="Int32" />
+    <Property Name="EmpID" Type="Int32" />
+    <Property Name="Month" Type="Int32" />
+    <Property Name="Year" Type="Int32" />
+    <Property Name="SalaryDistributePers" Type="Int32" />
+    <Property Name="SalaryDistributeValues" Type="Int32" />
+    <Property Name="LastUserID" Type="Int32" />
+    <Property Name="LastEditDateTime" Type="DateTime" />
+    <Property Name="Modifications" Type="Int32" />
+    <Property Name="LastIP" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Vw_TimeSheetByRow1">
+    <Key>
+      <PropertyRef Name="EmpFirstName" />
+      <PropertyRef Name="Department" />
+      <PropertyRef Name="DesigDescription" />
+      <PropertyRef Name="CompanyName" />
+      <PropertyRef Name="extra_status" />
+      <PropertyRef Name="BranchID" />
+    </Key>
+    <Property Name="EmpID" Type="Int32" />
+    <Property Name="TrDate" Type="DateTime" />
+    <Property Name="TrTime" Type="String" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="RoasterID" Type="Int32" />
+    <Property Name="WeekNo" Type="Int32" />
+    <Property Name="ReaderID" Type="Int32" />
+    <Property Name="ShiftID" Type="Int32" />
+    <Property Name="ReaderValue" Type="Int32" />
+    <Property Name="LastPunch_Date" Type="DateTime" />
+    <Property Name="LastPunch_Time" Type="String" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="EmpFirstName" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="EmpMiddleName" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="EmpLastName" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="DeptID" Type="Int32" />
+    <Property Name="Department" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="DesigID" Type="Int32" />
+    <Property Name="DesigDescription" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ShiftDescription" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ShiftStartTime" Type="String" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="ShiftEndTime" Type="String" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="ShiftGracePeriod" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="ShiftProlong" Type="Int32" />
+    <Property Name="CompanyName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyLogo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="extra_status" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="BranchID" Type="Int32" Nullable="false" />
+    <Property Name="EmpStatus" Type="Int32" />
+    <Property Name="Code" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="DeptDesc" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="EmpStatusID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Vw_TimeSheetByRow2">
+    <Key>
+      <PropertyRef Name="EmpFirstName" />
+      <PropertyRef Name="Department" />
+      <PropertyRef Name="DesigDescription" />
+      <PropertyRef Name="ShiftDescription" />
+      <PropertyRef Name="ShiftStartTime" />
+      <PropertyRef Name="ShiftEndTime" />
+      <PropertyRef Name="ShiftGracePeriod" />
+      <PropertyRef Name="ShiftProlong" />
+      <PropertyRef Name="CompanyName" />
+      <PropertyRef Name="extra_status" />
+      <PropertyRef Name="BranchID" />
+    </Key>
+    <Property Name="EmpID" Type="Int32" />
+    <Property Name="TrDate" Type="DateTime" />
+    <Property Name="TrTime" Type="String" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="RoasterID" Type="Int32" />
+    <Property Name="WeekNo" Type="Int32" />
+    <Property Name="ReaderID" Type="Int32" />
+    <Property Name="ShiftID" Type="Int32" />
+    <Property Name="ReaderValue" Type="Int32" />
+    <Property Name="LastPunch_Date" Type="DateTime" />
+    <Property Name="LastPunch_Time" Type="String" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="EmpFirstName" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="EmpMiddleName" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="EmpLastName" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="DeptID" Type="Int32" />
+    <Property Name="Department" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="DesigID" Type="Int32" />
+    <Property Name="DesigDescription" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ShiftDescription" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="ShiftStartTime" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="ShiftEndTime" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="ShiftGracePeriod" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="ShiftProlong" Type="Int32" Nullable="false" />
+    <Property Name="CompanyName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="CompanyLogo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="extra_status" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="BranchID" Type="Int32" Nullable="false" />
+    <Property Name="EmpStatus" Type="Int32" />
+    <Property Name="Code" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="DeptDesc" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="EmpStatusID" Type="Int32" />
+  </EntityType>
+</Schema>

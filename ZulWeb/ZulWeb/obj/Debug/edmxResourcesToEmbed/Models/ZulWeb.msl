@@ -1,0 +1,881 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ZulWebModelStoreContainer" CdmEntityContainer="ZulWebEntities">
+    <EntitySetMapping Name="ATT_DD_Shifts">
+      <EntityTypeMapping TypeName="ZulWebModel.ATT_DD_Shifts">
+        <MappingFragment StoreEntitySet="ATT_DD_Shifts">
+          <ScalarProperty Name="ShiftId" ColumnName="ShiftId" />
+          <ScalarProperty Name="ShiftDescription" ColumnName="ShiftDescription" />
+          <ScalarProperty Name="ShiftEntryStartTime" ColumnName="ShiftEntryStartTime" />
+          <ScalarProperty Name="ShiftStartTime" ColumnName="ShiftStartTime" />
+          <ScalarProperty Name="ShiftEndTime" ColumnName="ShiftEndTime" />
+          <ScalarProperty Name="ShiftGracePeriod" ColumnName="ShiftGracePeriod" />
+          <ScalarProperty Name="ShiftProlong" ColumnName="ShiftProlong" />
+          <ScalarProperty Name="ShiftStatus" ColumnName="ShiftStatus" />
+          <ScalarProperty Name="LastUserID" ColumnName="LastUserID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ATT_MA_EmployeeDutyRoaster_Detail">
+      <EntityTypeMapping TypeName="ZulWebModel.ATT_MA_EmployeeDutyRoaster_Detail">
+        <MappingFragment StoreEntitySet="ATT_MA_EmployeeDutyRoaster_Detail">
+          <ScalarProperty Name="RoasterID" ColumnName="RoasterID" />
+          <ScalarProperty Name="WeekNo" ColumnName="WeekNo" />
+          <ScalarProperty Name="Mon_Shift" ColumnName="Mon_Shift" />
+          <ScalarProperty Name="Tue_Shift" ColumnName="Tue_Shift" />
+          <ScalarProperty Name="Wed_Shift" ColumnName="Wed_Shift" />
+          <ScalarProperty Name="Thu_Shift" ColumnName="Thu_Shift" />
+          <ScalarProperty Name="Fri_Shift" ColumnName="Fri_Shift" />
+          <ScalarProperty Name="Sat_Shift" ColumnName="Sat_Shift" />
+          <ScalarProperty Name="Sun_Shift" ColumnName="Sun_Shift" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ATT_MA_EmployeeDutyRoaster_Main">
+      <EntityTypeMapping TypeName="ZulWebModel.ATT_MA_EmployeeDutyRoaster_Main">
+        <MappingFragment StoreEntitySet="ATT_MA_EmployeeDutyRoaster_Main">
+          <ScalarProperty Name="RoasterID" ColumnName="RoasterID" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="EmpRoasterStatus" ColumnName="EmpRoasterStatus" />
+          <ScalarProperty Name="EmpRoasterApplyDate" ColumnName="EmpRoasterApplyDate" />
+          <ScalarProperty Name="LastUserID" ColumnName="LastUserID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ATT_MA_Employees">
+      <EntityTypeMapping TypeName="ZulWebModel.ATT_MA_Employees">
+        <MappingFragment StoreEntitySet="ATT_MA_Employees">
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="EmpFirstName" ColumnName="EmpFirstName" />
+          <ScalarProperty Name="EmpMiddleName" ColumnName="EmpMiddleName" />
+          <ScalarProperty Name="EmpLastName" ColumnName="EmpLastName" />
+          <ScalarProperty Name="EmpFatherName" ColumnName="EmpFatherName" />
+          <ScalarProperty Name="EmpGender" ColumnName="EmpGender" />
+          <ScalarProperty Name="EmpSalutation" ColumnName="EmpSalutation" />
+          <ScalarProperty Name="EmpDOB" ColumnName="EmpDOB" />
+          <ScalarProperty Name="EmpAddress" ColumnName="EmpAddress" />
+          <ScalarProperty Name="CountryCityID" ColumnName="CountryCityID" />
+          <ScalarProperty Name="EmpJoinDate" ColumnName="EmpJoinDate" />
+          <ScalarProperty Name="EmpPhone" ColumnName="EmpPhone" />
+          <ScalarProperty Name="EmpMobile" ColumnName="EmpMobile" />
+          <ScalarProperty Name="EmpEmail" ColumnName="EmpEmail" />
+          <ScalarProperty Name="ReligionID" ColumnName="ReligionID" />
+          <ScalarProperty Name="EmpMaritalStatus" ColumnName="EmpMaritalStatus" />
+          <ScalarProperty Name="EmpCNIC" ColumnName="EmpCNIC" />
+          <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+          <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+          <ScalarProperty Name="DesigID" ColumnName="DesigID" />
+          <ScalarProperty Name="EmpConfirmationDate" ColumnName="EmpConfirmationDate" />
+          <ScalarProperty Name="EmpLeftDate" ColumnName="EmpLeftDate" />
+          <ScalarProperty Name="EmpStatus" ColumnName="EmpStatus" />
+          <ScalarProperty Name="LastUserID" ColumnName="LastUserID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+          <ScalarProperty Name="EmpPic" ColumnName="EmpPic" />
+          <ScalarProperty Name="LeftReason" ColumnName="LeftReason" />
+          <ScalarProperty Name="EmpHPTemplate" ColumnName="EmpHPTemplate" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="OTAllowed" ColumnName="OTAllowed" />
+          <ScalarProperty Name="LateAllowed" ColumnName="LateAllowed" />
+          <ScalarProperty Name="EmpStatusID" ColumnName="EmpStatusID" />
+          <ScalarProperty Name="OT_From" ColumnName="OT_From" />
+          <ScalarProperty Name="OT_To" ColumnName="OT_To" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ATT_MA_EmpShifts_Detail">
+      <EntityTypeMapping TypeName="ZulWebModel.ATT_MA_EmpShifts_Detail">
+        <MappingFragment StoreEntitySet="ATT_MA_EmpShifts_Detail">
+          <ScalarProperty Name="EmpShiftID" ColumnName="EmpShiftID" />
+          <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ATT_MA_EmpShifts_Main">
+      <EntityTypeMapping TypeName="ZulWebModel.ATT_MA_EmpShifts_Main">
+        <MappingFragment StoreEntitySet="ATT_MA_EmpShifts_Main">
+          <ScalarProperty Name="EmpShiftID" ColumnName="EmpShiftID" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="EmpShiftStatus" ColumnName="EmpShiftStatus" />
+          <ScalarProperty Name="EmpShiftApplyDate" ColumnName="EmpShiftApplyDate" />
+          <ScalarProperty Name="LastUserID" ColumnName="LastUserID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ATT_MA_EmpStatus">
+      <EntityTypeMapping TypeName="ZulWebModel.ATT_MA_EmpStatus">
+        <MappingFragment StoreEntitySet="ATT_MA_EmpStatus">
+          <ScalarProperty Name="EmpStatusID" ColumnName="EmpStatusID" />
+          <ScalarProperty Name="EmpStatusDesc" ColumnName="EmpStatusDesc" />
+          <ScalarProperty Name="EmpStatusFlag" ColumnName="EmpStatusFlag" />
+          <ScalarProperty Name="LasrUserID" ColumnName="LasrUserID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ATT_TR_PunchMissAndDelay">
+      <EntityTypeMapping TypeName="ZulWebModel.ATT_TR_PunchMissAndDelay">
+        <MappingFragment StoreEntitySet="ATT_TR_PunchMissAndDelay">
+          <ScalarProperty Name="PunchID" ColumnName="PunchID" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="DateOfMiss" ColumnName="DateOfMiss" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="EntryTime" ColumnName="EntryTime" />
+          <ScalarProperty Name="EntryType" ColumnName="EntryType" />
+          <ScalarProperty Name="ApproveID" ColumnName="ApproveID" />
+          <ScalarProperty Name="ApprovedDate" ColumnName="ApprovedDate" />
+          <ScalarProperty Name="LastUserID" ColumnName="LastUserID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+          <ScalarProperty Name="DateOfMissOut" ColumnName="DateOfMissOut" />
+          <ScalarProperty Name="EntryTimeOUT" ColumnName="EntryTimeOUT" />
+          <ScalarProperty Name="Posted" ColumnName="Posted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EUS_DD_Cities">
+      <EntityTypeMapping TypeName="ZulWebModel.EUS_DD_Cities">
+        <MappingFragment StoreEntitySet="EUS_DD_Cities">
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="CountryCityID" ColumnName="CountryCityID" />
+          <ScalarProperty Name="CityDescription" ColumnName="CityDescription" />
+          <ScalarProperty Name="LastUserID" ColumnName="LastUserID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EUS_DD_Countries">
+      <EntityTypeMapping TypeName="ZulWebModel.EUS_DD_Countries">
+        <MappingFragment StoreEntitySet="EUS_DD_Countries">
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="CountryDescription" ColumnName="CountryDescription" />
+          <ScalarProperty Name="LastUserID" ColumnName="LastUserID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EUS_DD_Departments">
+      <EntityTypeMapping TypeName="ZulWebModel.EUS_DD_Departments">
+        <MappingFragment StoreEntitySet="EUS_DD_Departments">
+          <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="DeptStatus" ColumnName="DeptStatus" />
+          <ScalarProperty Name="LastUserID" ColumnName="LastUserID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+          <ScalarProperty Name="DepartmentLevel" ColumnName="DepartmentLevel" />
+          <ScalarProperty Name="DepartmentParent" ColumnName="DepartmentParent" />
+          <ScalarProperty Name="DepartmentType" ColumnName="DepartmentType" />
+          <ScalarProperty Name="DeptCode" ColumnName="DeptCode" />
+          <ScalarProperty Name="DeptDesc" ColumnName="DeptDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EUS_DD_Designations">
+      <EntityTypeMapping TypeName="ZulWebModel.EUS_DD_Designations">
+        <MappingFragment StoreEntitySet="EUS_DD_Designations">
+          <ScalarProperty Name="DesigID" ColumnName="DesigID" />
+          <ScalarProperty Name="DesigDescription" ColumnName="DesigDescription" />
+          <ScalarProperty Name="DesigStatus" ColumnName="DesigStatus" />
+          <ScalarProperty Name="LastUserID" ColumnName="LastUserID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EUS_DD_ERPModules">
+      <EntityTypeMapping TypeName="ZulWebModel.EUS_DD_ERPModules">
+        <MappingFragment StoreEntitySet="EUS_DD_ERPModules">
+          <ScalarProperty Name="ERPModuleID" ColumnName="ERPModuleID" />
+          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+          <ScalarProperty Name="ModuleNameShort" ColumnName="ModuleNameShort" />
+          <ScalarProperty Name="ModuleStatus" ColumnName="ModuleStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EUS_DD_JobTypes">
+      <EntityTypeMapping TypeName="ZulWebModel.EUS_DD_JobTypes">
+        <MappingFragment StoreEntitySet="EUS_DD_JobTypes">
+          <ScalarProperty Name="JobID" ColumnName="JobID" />
+          <ScalarProperty Name="JobDescription" ColumnName="JobDescription" />
+          <ScalarProperty Name="JobStatus" ColumnName="JobStatus" />
+          <ScalarProperty Name="LastUserID" ColumnName="LastUserID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EUS_DD_Privileges">
+      <EntityTypeMapping TypeName="ZulWebModel.EUS_DD_Privileges">
+        <MappingFragment StoreEntitySet="EUS_DD_Privileges">
+          <ScalarProperty Name="PrivilegeID" ColumnName="PrivilegeID" />
+          <ScalarProperty Name="PrivilegeName" ColumnName="PrivilegeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EUS_DD_Religion">
+      <EntityTypeMapping TypeName="ZulWebModel.EUS_DD_Religion">
+        <MappingFragment StoreEntitySet="EUS_DD_Religion">
+          <ScalarProperty Name="ReligionID" ColumnName="ReligionID" />
+          <ScalarProperty Name="ReligionDesc" ColumnName="ReligionDesc" />
+          <ScalarProperty Name="ReligionStatus" ColumnName="ReligionStatus" />
+          <ScalarProperty Name="LastUserID" ColumnName="LastUserID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EUS_DD_UserTypes">
+      <EntityTypeMapping TypeName="ZulWebModel.EUS_DD_UserTypes">
+        <MappingFragment StoreEntitySet="EUS_DD_UserTypes">
+          <ScalarProperty Name="UserTypeID" ColumnName="UserTypeID" />
+          <ScalarProperty Name="UserTypeName" ColumnName="UserTypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EUS_MA_BP_Privilege">
+      <EntityTypeMapping TypeName="ZulWebModel.EUS_MA_BP_Privilege">
+        <MappingFragment StoreEntitySet="EUS_MA_BP_Privilege">
+          <ScalarProperty Name="BusinessProcessID" ColumnName="BusinessProcessID" />
+          <ScalarProperty Name="PrivilegeID" ColumnName="PrivilegeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EUS_MA_Branches">
+      <EntityTypeMapping TypeName="ZulWebModel.EUS_MA_Branches">
+        <MappingFragment StoreEntitySet="EUS_MA_Branches">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+          <ScalarProperty Name="BranchName" ColumnName="BranchName" />
+          <ScalarProperty Name="BranchAddress" ColumnName="BranchAddress" />
+          <ScalarProperty Name="BranchContactPerson" ColumnName="BranchContactPerson" />
+          <ScalarProperty Name="CountryCityID" ColumnName="CountryCityID" />
+          <ScalarProperty Name="BranchPhone" ColumnName="BranchPhone" />
+          <ScalarProperty Name="BranchFax" ColumnName="BranchFax" />
+          <ScalarProperty Name="BranchEmail" ColumnName="BranchEmail" />
+          <ScalarProperty Name="BranchURL" ColumnName="BranchURL" />
+          <ScalarProperty Name="BranchStatus" ColumnName="BranchStatus" />
+          <ScalarProperty Name="LastUserID" ColumnName="LastUserID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EUS_MA_BusinessProcesses">
+      <EntityTypeMapping TypeName="ZulWebModel.EUS_MA_BusinessProcesses">
+        <MappingFragment StoreEntitySet="EUS_MA_BusinessProcesses">
+          <ScalarProperty Name="BusinessProcessID" ColumnName="BusinessProcessID" />
+          <ScalarProperty Name="ERPModuleID" ColumnName="ERPModuleID" />
+          <ScalarProperty Name="BusinessProcessName" ColumnName="BusinessProcessName" />
+          <ScalarProperty Name="BusinessProcessNameShort" ColumnName="BusinessProcessNameShort" />
+          <ScalarProperty Name="BusinessProcessLevel" ColumnName="BusinessProcessLevel" />
+          <ScalarProperty Name="BusinessProcessParentID" ColumnName="BusinessProcessParentID" />
+          <ScalarProperty Name="BusinessProcessType" ColumnName="BusinessProcessType" />
+          <ScalarProperty Name="BusinessProcessFormName" ColumnName="BusinessProcessFormName" />
+          <ScalarProperty Name="BusinessProcessParameterValue" ColumnName="BusinessProcessParameterValue" />
+          <ScalarProperty Name="BusinessProcessStatus" ColumnName="BusinessProcessStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EUS_MA_Company">
+      <EntityTypeMapping TypeName="ZulWebModel.EUS_MA_Company">
+        <MappingFragment StoreEntitySet="EUS_MA_Company">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="CompanyContactPerson" ColumnName="CompanyContactPerson" />
+          <ScalarProperty Name="CompanyAddress" ColumnName="CompanyAddress" />
+          <ScalarProperty Name="CountryCityID" ColumnName="CountryCityID" />
+          <ScalarProperty Name="CompanyPhone" ColumnName="CompanyPhone" />
+          <ScalarProperty Name="CompanyFax" ColumnName="CompanyFax" />
+          <ScalarProperty Name="CompanyEmail" ColumnName="CompanyEmail" />
+          <ScalarProperty Name="CompanyURL" ColumnName="CompanyURL" />
+          <ScalarProperty Name="CompanyLogo" ColumnName="CompanyLogo" />
+          <ScalarProperty Name="CompanyStatus" ColumnName="CompanyStatus" />
+          <ScalarProperty Name="LastUserID" ColumnName="LastUserID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EUS_MA_Configuration">
+      <EntityTypeMapping TypeName="ZulWebModel.EUS_MA_Configuration">
+        <MappingFragment StoreEntitySet="EUS_MA_Configuration">
+          <ScalarProperty Name="ConfigID" ColumnName="ConfigID" />
+          <ScalarProperty Name="ReceiptPrinter" ColumnName="ReceiptPrinter" />
+          <ScalarProperty Name="CashDrawerID" ColumnName="CashDrawerID" />
+          <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+          <ScalarProperty Name="ReportPrinter" ColumnName="ReportPrinter" />
+          <ScalarProperty Name="OnePrinterForAllKitchen" ColumnName="OnePrinterForAllKitchen" />
+          <ScalarProperty Name="LastUserID" ColumnName="LastUserID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EUS_MA_Users">
+      <EntityTypeMapping TypeName="ZulWebModel.EUS_MA_Users">
+        <MappingFragment StoreEntitySet="EUS_MA_Users">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="CountryCityID" ColumnName="CountryCityID" />
+          <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="UserStatus" ColumnName="UserStatus" />
+          <ScalarProperty Name="ThemeID" ColumnName="ThemeID" />
+          <ScalarProperty Name="ThemePath" ColumnName="ThemePath" />
+          <ScalarProperty Name="UserTypeID" ColumnName="UserTypeID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EUS_TR_UserPrivileges">
+      <EntityTypeMapping TypeName="ZulWebModel.EUS_TR_UserPrivileges">
+        <MappingFragment StoreEntitySet="EUS_TR_UserPrivileges">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ERPModuleID" ColumnName="ERPModuleID" />
+          <ScalarProperty Name="BusinessProcessID" ColumnName="BusinessProcessID" />
+          <ScalarProperty Name="PrivilegeID" ColumnName="PrivilegeID" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LM_DD_LeaveTypes">
+      <EntityTypeMapping TypeName="ZulWebModel.LM_DD_LeaveTypes">
+        <MappingFragment StoreEntitySet="LM_DD_LeaveTypes">
+          <ScalarProperty Name="LeaveTypeID" ColumnName="LeaveTypeID" />
+          <ScalarProperty Name="LeaveTypeDesc" ColumnName="LeaveTypeDesc" />
+          <ScalarProperty Name="LeaveTotal" ColumnName="LeaveTotal" />
+          <ScalarProperty Name="LeaveColor" ColumnName="LeaveColor" />
+          <ScalarProperty Name="LeaveEncashable" ColumnName="LeaveEncashable" />
+          <ScalarProperty Name="LeaveEncashableMax" ColumnName="LeaveEncashableMax" />
+          <ScalarProperty Name="LeaveForward" ColumnName="LeaveForward" />
+          <ScalarProperty Name="LeaveForwardMax" ColumnName="LeaveForwardMax" />
+          <ScalarProperty Name="LeaveHoldMax" ColumnName="LeaveHoldMax" />
+          <ScalarProperty Name="LeaveTypeStatus" ColumnName="LeaveTypeStatus" />
+          <ScalarProperty Name="LastUserID" ColumnName="LastUserID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LM_MA_Calendar">
+      <EntityTypeMapping TypeName="ZulWebModel.LM_MA_Calendar">
+        <MappingFragment StoreEntitySet="LM_MA_Calendar">
+          <ScalarProperty Name="CalendarID" ColumnName="CalendarID" />
+          <ScalarProperty Name="CalendarDescription" ColumnName="CalendarDescription" />
+          <ScalarProperty Name="CalendarDate" ColumnName="CalendarDate" />
+          <ScalarProperty Name="LastUserID" ColumnName="LastUserID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LM_MA_FiscalYear">
+      <EntityTypeMapping TypeName="ZulWebModel.LM_MA_FiscalYear">
+        <MappingFragment StoreEntitySet="LM_MA_FiscalYear">
+          <ScalarProperty Name="FiscalYearID" ColumnName="FiscalYearID" />
+          <ScalarProperty Name="FYStart" ColumnName="FYStart" />
+          <ScalarProperty Name="FYEnd" ColumnName="FYEnd" />
+          <ScalarProperty Name="FYStatus" ColumnName="FYStatus" />
+          <ScalarProperty Name="LastUserID" ColumnName="LastUserID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PR_DD_Allowance">
+      <EntityTypeMapping TypeName="ZulWebModel.PR_DD_Allowance">
+        <MappingFragment StoreEntitySet="PR_DD_Allowance">
+          <ScalarProperty Name="AllowanceID" ColumnName="AllowanceID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="OfficeID" ColumnName="OfficeID" />
+          <ScalarProperty Name="AllowPercentage" ColumnName="AllowPercentage" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PR_DD_Banks">
+      <EntityTypeMapping TypeName="ZulWebModel.PR_DD_Banks">
+        <MappingFragment StoreEntitySet="PR_DD_Banks">
+          <ScalarProperty Name="BankID" ColumnName="BankID" />
+          <ScalarProperty Name="BankDesc" ColumnName="BankDesc" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PR_DD_Branches">
+      <EntityTypeMapping TypeName="ZulWebModel.PR_DD_Branches">
+        <MappingFragment StoreEntitySet="PR_DD_Branches">
+          <ScalarProperty Name="BankBranchID" ColumnName="BankBranchID" />
+          <ScalarProperty Name="BankID" ColumnName="BankID" />
+          <ScalarProperty Name="BranchDescription" ColumnName="BranchDescription" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="CountryCidyID" ColumnName="CountryCidyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PR_DD_LoanType">
+      <EntityTypeMapping TypeName="ZulWebModel.PR_DD_LoanType">
+        <MappingFragment StoreEntitySet="PR_DD_LoanType">
+          <ScalarProperty Name="LoanTypeID" ColumnName="LoanTypeID" />
+          <ScalarProperty Name="LoanTypeDesc" ColumnName="LoanTypeDesc" />
+          <ScalarProperty Name="Loan_Adv" ColumnName="Loan_Adv" />
+          <ScalarProperty Name="LoanTypeStatus" ColumnName="LoanTypeStatus" />
+          <ScalarProperty Name="LastUserID" ColumnName="LastUserID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PR_DD_PayMethod">
+      <EntityTypeMapping TypeName="ZulWebModel.PR_DD_PayMethod">
+        <MappingFragment StoreEntitySet="PR_DD_PayMethod">
+          <ScalarProperty Name="PayMethodID" ColumnName="PayMethodID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PR_MA_EmpSetup">
+      <EntityTypeMapping TypeName="ZulWebModel.PR_MA_EmpSetup">
+        <MappingFragment StoreEntitySet="PR_MA_EmpSetup">
+          <ScalarProperty Name="EmpSetupID" ColumnName="EmpSetupID" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="BasicPay" ColumnName="BasicPay" />
+          <ScalarProperty Name="GrossPay" ColumnName="GrossPay" />
+          <ScalarProperty Name="HouseRent" ColumnName="HouseRent" />
+          <ScalarProperty Name="Utilities" ColumnName="Utilities" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Fuel" ColumnName="Fuel" />
+          <ScalarProperty Name="IncomeTax" ColumnName="IncomeTax" />
+          <ScalarProperty Name="Canteen" ColumnName="Canteen" />
+          <ScalarProperty Name="PayMethodID" ColumnName="PayMethodID" />
+          <ScalarProperty Name="BankID" ColumnName="BankID" />
+          <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+          <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+          <ScalarProperty Name="AccountNo" ColumnName="AccountNo" />
+          <ScalarProperty Name="Taxation" ColumnName="Taxation" />
+          <ScalarProperty Name="RecommendedBy" ColumnName="RecommendedBy" />
+          <ScalarProperty Name="RecomendDate" ColumnName="RecomendDate" />
+          <ScalarProperty Name="ApprovedBy" ColumnName="ApprovedBy" />
+          <ScalarProperty Name="ApprovedDate" ColumnName="ApprovedDate" />
+          <ScalarProperty Name="RecActive" ColumnName="RecActive" />
+          <ScalarProperty Name="LastUserID" ColumnName="LastUserID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+          <ScalarProperty Name="CalcType" ColumnName="CalcType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PR_TR_AdvLoan">
+      <EntityTypeMapping TypeName="ZulWebModel.PR_TR_AdvLoan">
+        <MappingFragment StoreEntitySet="PR_TR_AdvLoan">
+          <ScalarProperty Name="AdvLoanID" ColumnName="AdvLoanID" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="LoanTypeID" ColumnName="LoanTypeID" />
+          <ScalarProperty Name="ApplyDate" ColumnName="ApplyDate" />
+          <ScalarProperty Name="ApplyAmount" ColumnName="ApplyAmount" />
+          <ScalarProperty Name="ApprovalDate" ColumnName="ApprovalDate" />
+          <ScalarProperty Name="ApprovedAmount" ColumnName="ApprovedAmount" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="TotalInstallments" ColumnName="TotalInstallments" />
+          <ScalarProperty Name="InstallmentAmount" ColumnName="InstallmentAmount" />
+          <ScalarProperty Name="ApprovedBy" ColumnName="ApprovedBy" />
+          <ScalarProperty Name="ApprovedDate" ColumnName="ApprovedDate" />
+          <ScalarProperty Name="loanstatus" ColumnName="loanstatus" />
+          <ScalarProperty Name="balamount" ColumnName="balamount" />
+          <ScalarProperty Name="restartdate" ColumnName="restartdate" />
+          <ScalarProperty Name="LastUserID" ColumnName="LastUserID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PR_TR_AdvLoanRecover">
+      <EntityTypeMapping TypeName="ZulWebModel.PR_TR_AdvLoanRecover">
+        <MappingFragment StoreEntitySet="PR_TR_AdvLoanRecover">
+          <ScalarProperty Name="AdvLoanId" ColumnName="AdvLoanId" />
+          <ScalarProperty Name="RecoverID" ColumnName="RecoverID" />
+          <ScalarProperty Name="openbal" ColumnName="openbal" />
+          <ScalarProperty Name="recoveramt" ColumnName="recoveramt" />
+          <ScalarProperty Name="colosebal" ColumnName="colosebal" />
+          <ScalarProperty Name="recoverdate" ColumnName="recoverdate" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="RecoverType" ColumnName="RecoverType" />
+          <ScalarProperty Name="RecoverRemarks" ColumnName="RecoverRemarks" />
+          <ScalarProperty Name="CalenID" ColumnName="CalenID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PR_TR_Allowance">
+      <EntityTypeMapping TypeName="ZulWebModel.PR_TR_Allowance">
+        <MappingFragment StoreEntitySet="PR_TR_Allowance">
+          <ScalarProperty Name="AllowanceID" ColumnName="AllowanceID" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="AllowanceDesc" ColumnName="AllowanceDesc" />
+          <ScalarProperty Name="AllowanceDate" ColumnName="AllowanceDate" />
+          <ScalarProperty Name="AllowanceAmount" ColumnName="AllowanceAmount" />
+          <ScalarProperty Name="LastUserID" ColumnName="LastUserID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+          <ScalarProperty Name="ApprovedBy" ColumnName="ApprovedBy" />
+          <ScalarProperty Name="ApprovedDate" ColumnName="ApprovedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PR_TR_Arrears">
+      <EntityTypeMapping TypeName="ZulWebModel.PR_TR_Arrears">
+        <MappingFragment StoreEntitySet="PR_TR_Arrears">
+          <ScalarProperty Name="ArrearID" ColumnName="ArrearID" />
+          <ScalarProperty Name="Empid" ColumnName="Empid" />
+          <ScalarProperty Name="ArrearType" ColumnName="ArrearType" />
+          <ScalarProperty Name="ArrearDate" ColumnName="ArrearDate" />
+          <ScalarProperty Name="ArrearAmt" ColumnName="ArrearAmt" />
+          <ScalarProperty Name="ArrearDescription" ColumnName="ArrearDescription" />
+          <ScalarProperty Name="ArrearRemarks" ColumnName="ArrearRemarks" />
+          <ScalarProperty Name="ArrearPost" ColumnName="ArrearPost" />
+          <ScalarProperty Name="ArrearPostingDate" ColumnName="ArrearPostingDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PR_TR_Calendar">
+      <EntityTypeMapping TypeName="ZulWebModel.PR_TR_Calendar">
+        <MappingFragment StoreEntitySet="PR_TR_Calendar">
+          <ScalarProperty Name="CalenID" ColumnName="CalenID" />
+          <ScalarProperty Name="CalenderDescription" ColumnName="CalenderDescription" />
+          <ScalarProperty Name="PayrollType" ColumnName="PayrollType" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PR_TR_Deducation">
+      <EntityTypeMapping TypeName="ZulWebModel.PR_TR_Deducation">
+        <MappingFragment StoreEntitySet="PR_TR_Deducation">
+          <ScalarProperty Name="DeducationID" ColumnName="DeducationID" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="CalenID" ColumnName="CalenID" />
+          <ScalarProperty Name="DeducationDesc" ColumnName="DeducationDesc" />
+          <ScalarProperty Name="DeducationAmount" ColumnName="DeducationAmount" />
+          <ScalarProperty Name="LastUserID" ColumnName="LastUserID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+          <ScalarProperty Name="ApprovedBy" ColumnName="ApprovedBy" />
+          <ScalarProperty Name="ApprovedDate" ColumnName="ApprovedDate" />
+          <ScalarProperty Name="IsClosed" ColumnName="IsClosed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PR_TR_LateAdjustment">
+      <EntityTypeMapping TypeName="ZulWebModel.PR_TR_LateAdjustment">
+        <MappingFragment StoreEntitySet="PR_TR_LateAdjustment">
+          <ScalarProperty Name="TRID" ColumnName="TRID" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="CalenID" ColumnName="CalenID" />
+          <ScalarProperty Name="ActualLate" ColumnName="ActualLate" />
+          <ScalarProperty Name="SystemLate" ColumnName="SystemLate" />
+          <ScalarProperty Name="FinalLate" ColumnName="FinalLate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PR_TR_NETPAY">
+      <EntityTypeMapping TypeName="ZulWebModel.PR_TR_NETPAY">
+        <MappingFragment StoreEntitySet="PR_TR_NETPAY">
+          <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+          <ScalarProperty Name="CalenID" ColumnName="CalenID" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="DesignationID" ColumnName="DesignationID" />
+          <ScalarProperty Name="payprocessdate" ColumnName="payprocessdate" />
+          <ScalarProperty Name="basicpay" ColumnName="basicpay" />
+          <ScalarProperty Name="houserent" ColumnName="houserent" />
+          <ScalarProperty Name="utilities" ColumnName="utilities" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="fuel" ColumnName="fuel" />
+          <ScalarProperty Name="overtimeminutes" ColumnName="overtimeminutes" />
+          <ScalarProperty Name="overtimeamount" ColumnName="overtimeamount" />
+          <ScalarProperty Name="otherdeductions" ColumnName="otherdeductions" />
+          <ScalarProperty Name="canteen" ColumnName="canteen" />
+          <ScalarProperty Name="Vehicle" ColumnName="Vehicle" />
+          <ScalarProperty Name="itax" ColumnName="itax" />
+          <ScalarProperty Name="advancepayback" ColumnName="advancepayback" />
+          <ScalarProperty Name="loanpayback" ColumnName="loanpayback" />
+          <ScalarProperty Name="Vehicleloanpayback" ColumnName="Vehicleloanpayback" />
+          <ScalarProperty Name="netpayment" ColumnName="netpayment" />
+          <ScalarProperty Name="workingdays" ColumnName="workingdays" />
+          <ScalarProperty Name="presentdays" ColumnName="presentdays" />
+          <ScalarProperty Name="absentdays" ColumnName="absentdays" />
+          <ScalarProperty Name="latedays" ColumnName="latedays" />
+          <ScalarProperty Name="CL" ColumnName="CL" />
+          <ScalarProperty Name="SL" ColumnName="SL" />
+          <ScalarProperty Name="AL" ColumnName="AL" />
+          <ScalarProperty Name="OL" ColumnName="OL" />
+          <ScalarProperty Name="TotalMonthDays" ColumnName="TotalMonthDays" />
+          <ScalarProperty Name="TotalHolyDays" ColumnName="TotalHolyDays" />
+          <ScalarProperty Name="PayMethodID" ColumnName="PayMethodID" />
+          <ScalarProperty Name="BankID" ColumnName="BankID" />
+          <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+          <ScalarProperty Name="AccountNo" ColumnName="AccountNo" />
+          <ScalarProperty Name="AGross" ColumnName="AGross" />
+          <ScalarProperty Name="PaymentDays" ColumnName="PaymentDays" />
+          <ScalarProperty Name="CollectArrears" ColumnName="CollectArrears" />
+          <ScalarProperty Name="PayArrears" ColumnName="PayArrears" />
+          <ScalarProperty Name="CollectArrearsDesc" ColumnName="CollectArrearsDesc" />
+          <ScalarProperty Name="PayArrearsDesc" ColumnName="PayArrearsDesc" />
+          <ScalarProperty Name="CollectArrearsRem" ColumnName="CollectArrearsRem" />
+          <ScalarProperty Name="PayArrearsRem" ColumnName="PayArrearsRem" />
+          <ScalarProperty Name="LateDeduction" ColumnName="LateDeduction" />
+          <ScalarProperty Name="OtherDeduction" ColumnName="OtherDeduction" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PR_TR_Salary">
+      <EntityTypeMapping TypeName="ZulWebModel.PR_TR_Salary">
+        <MappingFragment StoreEntitySet="PR_TR_Salary">
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="AllowanceID" ColumnName="AllowanceID" />
+          <ScalarProperty Name="CalenID" ColumnName="CalenID" />
+          <ScalarProperty Name="AllowanceAmountActual" ColumnName="AllowanceAmountActual" />
+          <ScalarProperty Name="AllowanceAmountEarned" ColumnName="AllowanceAmountEarned" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PR_TR_StaffDeductions">
+      <EntityTypeMapping TypeName="ZulWebModel.PR_TR_StaffDeductions">
+        <MappingFragment StoreEntitySet="PR_TR_StaffDeductions">
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="DeductMonth" ColumnName="DeductMonth" />
+          <ScalarProperty Name="DeductYear" ColumnName="DeductYear" />
+          <ScalarProperty Name="DeductionID" ColumnName="DeductionID" />
+          <ScalarProperty Name="DeductTrID" ColumnName="DeductTrID" />
+          <ScalarProperty Name="DeductAmount" ColumnName="DeductAmount" />
+          <ScalarProperty Name="DeductTrDate" ColumnName="DeductTrDate" />
+          <ScalarProperty Name="DeductPost" ColumnName="DeductPost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rdr_Configuration">
+      <EntityTypeMapping TypeName="ZulWebModel.Rdr_Configuration">
+        <MappingFragment StoreEntitySet="Rdr_Configuration">
+          <ScalarProperty Name="ReaderID" ColumnName="ReaderID" />
+          <ScalarProperty Name="ReaderDescription" ColumnName="ReaderDescription" />
+          <ScalarProperty Name="ReaderConnected" ColumnName="ReaderConnected" />
+          <ScalarProperty Name="ReaderConnType" ColumnName="ReaderConnType" />
+          <ScalarProperty Name="ReaderComPort" ColumnName="ReaderComPort" />
+          <ScalarProperty Name="ReaderBaud" ColumnName="ReaderBaud" />
+          <ScalarProperty Name="ReaderModPhone" ColumnName="ReaderModPhone" />
+          <ScalarProperty Name="ReaderModInitStr" ColumnName="ReaderModInitStr" />
+          <ScalarProperty Name="ReaderHostIP" ColumnName="ReaderHostIP" />
+          <ScalarProperty Name="ReaderEPort" ColumnName="ReaderEPort" />
+          <ScalarProperty Name="ReaderSno" ColumnName="ReaderSno" />
+          <ScalarProperty Name="ReaderUsersCap" ColumnName="ReaderUsersCap" />
+          <ScalarProperty Name="ReaderUsersEnr" ColumnName="ReaderUsersEnr" />
+          <ScalarProperty Name="ReaderTransCap" ColumnName="ReaderTransCap" />
+          <ScalarProperty Name="ReaderUsedFor" ColumnName="ReaderUsedFor" />
+          <ScalarProperty Name="ReaderENetConverter" ColumnName="ReaderENetConverter" />
+          <ScalarProperty Name="ReaderRStatus" ColumnName="ReaderRStatus" />
+          <ScalarProperty Name="ReaderDevType" ColumnName="ReaderDevType" />
+          <ScalarProperty Name="LastUserID" ColumnName="LastUserID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rdr_Ext_Config">
+      <EntityTypeMapping TypeName="ZulWebModel.Rdr_Ext_Config">
+        <MappingFragment StoreEntitySet="Rdr_Ext_Config">
+          <ScalarProperty Name="ReadConfigId" ColumnName="ReadConfigId" />
+          <ScalarProperty Name="Custom_Start" ColumnName="Custom_Start" />
+          <ScalarProperty Name="Custom_Length" ColumnName="Custom_Length" />
+          <ScalarProperty Name="Time_Start" ColumnName="Time_Start" />
+          <ScalarProperty Name="Time_Length" ColumnName="Time_Length" />
+          <ScalarProperty Name="Extra_Start" ColumnName="Extra_Start" />
+          <ScalarProperty Name="Extra_Length" ColumnName="Extra_Length" />
+          <ScalarProperty Name="Status_Start" ColumnName="Status_Start" />
+          <ScalarProperty Name="Status_Length" ColumnName="Status_Length" />
+          <ScalarProperty Name="EmpID_Start" ColumnName="EmpID_Start" />
+          <ScalarProperty Name="EmpID_Length" ColumnName="EmpID_Length" />
+          <ScalarProperty Name="MachId_Start" ColumnName="MachId_Start" />
+          <ScalarProperty Name="MachId_Length" ColumnName="MachId_Length" />
+          <ScalarProperty Name="TaCode_Start" ColumnName="TaCode_Start" />
+          <ScalarProperty Name="TaCode_Length" ColumnName="TaCode_Length" />
+          <ScalarProperty Name="Year_Start" ColumnName="Year_Start" />
+          <ScalarProperty Name="Year_Length" ColumnName="Year_Length" />
+          <ScalarProperty Name="Month_Start" ColumnName="Month_Start" />
+          <ScalarProperty Name="Month_Length" ColumnName="Month_Length" />
+          <ScalarProperty Name="Day_Start" ColumnName="Day_Start" />
+          <ScalarProperty Name="Day_Length" ColumnName="Day_Length" />
+          <ScalarProperty Name="LastUserID" ColumnName="LastUserID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rdr_Messages">
+      <EntityTypeMapping TypeName="ZulWebModel.Rdr_Messages">
+        <MappingFragment StoreEntitySet="Rdr_Messages">
+          <ScalarProperty Name="Reader_MsgID" ColumnName="Reader_MsgID" />
+          <ScalarProperty Name="Reader_MsgDesc" ColumnName="Reader_MsgDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rdr_TxtFile">
+      <EntityTypeMapping TypeName="ZulWebModel.Rdr_TxtFile">
+        <MappingFragment StoreEntitySet="Rdr_TxtFile">
+          <ScalarProperty Name="TrNo" ColumnName="TrNo" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="TrDate" ColumnName="TrDate" />
+          <ScalarProperty Name="TrTime" ColumnName="TrTime" />
+          <ScalarProperty Name="NumTime" ColumnName="NumTime" />
+          <ScalarProperty Name="TrType" ColumnName="TrType" />
+          <ScalarProperty Name="TrShiftID" ColumnName="TrShiftID" />
+          <ScalarProperty Name="NewTrDate" ColumnName="NewTrDate" />
+          <ScalarProperty Name="NewTrTime" ColumnName="NewTrTime" />
+          <ScalarProperty Name="NewNumTime" ColumnName="NewNumTime" />
+          <ScalarProperty Name="NewTrType" ColumnName="NewTrType" />
+          <ScalarProperty Name="NewTrShiftID" ColumnName="NewTrShiftID" />
+          <ScalarProperty Name="MachineID" ColumnName="MachineID" />
+          <ScalarProperty Name="MachineOrAdditional" ColumnName="MachineOrAdditional" />
+          <ScalarProperty Name="isdeleted" ColumnName="isdeleted" />
+          <ScalarProperty Name="IsFinal" ColumnName="IsFinal" />
+          <ScalarProperty Name="isDateChange" ColumnName="isDateChange" />
+          <ScalarProperty Name="IsTimeChange" ColumnName="IsTimeChange" />
+          <ScalarProperty Name="IsTypeChange" ColumnName="IsTypeChange" />
+          <ScalarProperty Name="IsShiftChange" ColumnName="IsShiftChange" />
+          <ScalarProperty Name="LastUserID" ColumnName="LastUserID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalaryBranchDistributes">
+      <EntityTypeMapping TypeName="ZulWebModel.SalaryBranchDistribute">
+        <MappingFragment StoreEntitySet="SalaryBranchDistribute">
+          <ScalarProperty Name="SalaryDistributeId" ColumnName="SalaryDistributeId" />
+          <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="SalaryDistributePers" ColumnName="SalaryDistributePers" />
+          <ScalarProperty Name="SalaryDistributeValues" ColumnName="SalaryDistributeValues" />
+          <ScalarProperty Name="LastUserID" ColumnName="LastUserID" />
+          <ScalarProperty Name="LastEditDateTime" ColumnName="LastEditDateTime" />
+          <ScalarProperty Name="Modifications" ColumnName="Modifications" />
+          <ScalarProperty Name="LastIP" ColumnName="LastIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vw_TimeSheetByRow1">
+      <EntityTypeMapping TypeName="ZulWebModel.Vw_TimeSheetByRow1">
+        <MappingFragment StoreEntitySet="Vw_TimeSheetByRow1">
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="TrDate" ColumnName="TrDate" />
+          <ScalarProperty Name="TrTime" ColumnName="TrTime" />
+          <ScalarProperty Name="RoasterID" ColumnName="RoasterID" />
+          <ScalarProperty Name="WeekNo" ColumnName="WeekNo" />
+          <ScalarProperty Name="ReaderID" ColumnName="ReaderID" />
+          <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+          <ScalarProperty Name="ReaderValue" ColumnName="ReaderValue" />
+          <ScalarProperty Name="LastPunch_Date" ColumnName="LastPunch_Date" />
+          <ScalarProperty Name="LastPunch_Time" ColumnName="LastPunch_Time" />
+          <ScalarProperty Name="EmpFirstName" ColumnName="EmpFirstName" />
+          <ScalarProperty Name="EmpMiddleName" ColumnName="EmpMiddleName" />
+          <ScalarProperty Name="EmpLastName" ColumnName="EmpLastName" />
+          <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="DesigID" ColumnName="DesigID" />
+          <ScalarProperty Name="DesigDescription" ColumnName="DesigDescription" />
+          <ScalarProperty Name="ShiftDescription" ColumnName="ShiftDescription" />
+          <ScalarProperty Name="ShiftStartTime" ColumnName="ShiftStartTime" />
+          <ScalarProperty Name="ShiftEndTime" ColumnName="ShiftEndTime" />
+          <ScalarProperty Name="ShiftGracePeriod" ColumnName="ShiftGracePeriod" />
+          <ScalarProperty Name="ShiftProlong" ColumnName="ShiftProlong" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="CompanyLogo" ColumnName="CompanyLogo" />
+          <ScalarProperty Name="extra_status" ColumnName="extra_status" />
+          <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+          <ScalarProperty Name="EmpStatus" ColumnName="EmpStatus" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="DeptDesc" ColumnName="DeptDesc" />
+          <ScalarProperty Name="EmpStatusID" ColumnName="EmpStatusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vw_TimeSheetByRow2">
+      <EntityTypeMapping TypeName="ZulWebModel.Vw_TimeSheetByRow2">
+        <MappingFragment StoreEntitySet="Vw_TimeSheetByRow2">
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="TrDate" ColumnName="TrDate" />
+          <ScalarProperty Name="TrTime" ColumnName="TrTime" />
+          <ScalarProperty Name="RoasterID" ColumnName="RoasterID" />
+          <ScalarProperty Name="WeekNo" ColumnName="WeekNo" />
+          <ScalarProperty Name="ReaderID" ColumnName="ReaderID" />
+          <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+          <ScalarProperty Name="ReaderValue" ColumnName="ReaderValue" />
+          <ScalarProperty Name="LastPunch_Date" ColumnName="LastPunch_Date" />
+          <ScalarProperty Name="LastPunch_Time" ColumnName="LastPunch_Time" />
+          <ScalarProperty Name="EmpFirstName" ColumnName="EmpFirstName" />
+          <ScalarProperty Name="EmpMiddleName" ColumnName="EmpMiddleName" />
+          <ScalarProperty Name="EmpLastName" ColumnName="EmpLastName" />
+          <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="DesigID" ColumnName="DesigID" />
+          <ScalarProperty Name="DesigDescription" ColumnName="DesigDescription" />
+          <ScalarProperty Name="ShiftDescription" ColumnName="ShiftDescription" />
+          <ScalarProperty Name="ShiftStartTime" ColumnName="ShiftStartTime" />
+          <ScalarProperty Name="ShiftEndTime" ColumnName="ShiftEndTime" />
+          <ScalarProperty Name="ShiftGracePeriod" ColumnName="ShiftGracePeriod" />
+          <ScalarProperty Name="ShiftProlong" ColumnName="ShiftProlong" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="CompanyLogo" ColumnName="CompanyLogo" />
+          <ScalarProperty Name="extra_status" ColumnName="extra_status" />
+          <ScalarProperty Name="BranchID" ColumnName="BranchID" />
+          <ScalarProperty Name="EmpStatus" ColumnName="EmpStatus" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="DeptDesc" ColumnName="DeptDesc" />
+          <ScalarProperty Name="EmpStatusID" ColumnName="EmpStatusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
